@@ -1,6 +1,6 @@
 // ============ PARAMETERS ============
-int m = 5;      // width  (columns)
-int n = 4;      // height (rows)
+int m = 6;      // width  (columns)
+int n = 6;      // height (rows)
 int cellSize = 30;
 int margin = 20;
 
@@ -35,13 +35,21 @@ void explore(ArrayList<PVector> path, PVector cur) {
   newPath.add(cur);
 
   // t = (m-1, n-1)
-  if (cur.x == m-1 && cur.y == n-1) {
+  //if (cur.x == m-1 && cur.y == n-1) {
+  //  if (newPath.size() == m * n) {
+  //    allPaths.add(newPath);
+  //  }
+  //  return;
+  //}
+  
+  // t = (0, n-1)
+  if (cur.x == 0 && cur.y == n-1) {
     if (newPath.size() == m * n) {
       allPaths.add(newPath);
     }
     return;
   }
-
+  
   // directions: RIGHT, DOWN, LEFT, UP
   int[][] dirs = {
     {1,0},
@@ -135,7 +143,7 @@ void saveAllPathsAsOneImage(int cols, int rows, int tileW, int tileH) {
   pg.endDraw();
 
   // save to sketch folder with correct naming
-  String filename = "paths_m" + m + "_n" + n + "_diff.png";
+  String filename = "paths_m" + m + "_n" + n + ".png";
   pg.save(filename);
 
   println("Saved image: " + filename);
@@ -185,9 +193,17 @@ void drawPath(PGraphics pg, ArrayList<PVector> path) {
   pg.ellipse(cellSize/2, cellSize/2, cellSize*0.4, cellSize*0.4);
 
   // end = (m-1,n-1)
+  //pg.fill(200,0,0);
+  //pg.ellipse(
+  //  (m-1)*cellSize + cellSize/2,
+  //  (n-1)*cellSize + cellSize/2,
+  //  cellSize*0.4, cellSize*0.4
+  //);
+  
+  // end = (m-1,n-1)
   pg.fill(200,0,0);
   pg.ellipse(
-    (m-1)*cellSize + cellSize/2,
+    cellSize/2,
     (n-1)*cellSize + cellSize/2,
     cellSize*0.4, cellSize*0.4
   );
