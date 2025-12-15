@@ -11,7 +11,7 @@ boolean savedImage = false;
 String inputFile;
 
 void setup() {
-  inputFile = "/Users/chenzhuo/Desktop/hamiltonian/all_paths/paths_m6_n4.txt";  
+  inputFile = "/Users/chenzhuo/Desktop/hamiltonian/all_paths/paths_m6_n6_3.txt";  
   loadPathsFromFile(inputFile);
 
   // create image directly (see next section)
@@ -144,21 +144,30 @@ String outputImagePath(String inputPath) {
   String base = (dot >= 0) ? inputPath.substring(slash + 1, dot)
                           : inputPath.substring(slash + 1);
 
-  return base + ".png";
+  return base + "_test.png";
 }
 
 
 void drawGrid() {
-  stroke(150);
-  for (int i = 0; i <= m; i++)
-    line(i * cellSize, 0, i * cellSize, n * cellSize);
-  for (int j = 0; j <= n; j++)
-    line(0, j * cellSize, m * cellSize, j * cellSize);
+  drawGrid(g);
 }
 
+void drawGrid(PGraphics pg) {
+  pg.stroke(150);
+  for (int i = 0; i <= m; i++)
+    pg.line(i * cellSize, 0, i * cellSize, n * cellSize);
+  for (int j = 0; j <= n; j++)
+    pg.line(0, j * cellSize, m * cellSize, j * cellSize);
+}
+
+
 void drawPath(ArrayList<PVector> path) {
-  strokeWeight(3);
-  stroke(0);
+  drawPath(g, path);
+}
+
+void drawPath(PGraphics pg, ArrayList<PVector> path) {
+  pg.strokeWeight(3);
+  pg.stroke(0);
 
   for (int i = 0; i < path.size() - 1; i++) {
     PVector a = path.get(i);
@@ -169,16 +178,17 @@ void drawPath(ArrayList<PVector> path) {
     float bx = b.x * cellSize + cellSize / 2;
     float by = b.y * cellSize + cellSize / 2;
 
-    line(ax, ay, bx, by);
+    pg.line(ax, ay, bx, by);
   }
 
   // start
-  fill(0, 150, 0);
-  ellipse(cellSize / 2, cellSize / 2, cellSize * 0.4, cellSize * 0.4);
+  pg.fill(0, 150, 0);
+  pg.ellipse(cellSize / 2, cellSize / 2,
+             cellSize * 0.4, cellSize * 0.4);
 
   // end (0, n-1)
-  fill(200, 0, 0);
-  ellipse(
+  pg.fill(200, 0, 0);
+  pg.ellipse(
     cellSize / 2,
     (n - 1) * cellSize + cellSize / 2,
     cellSize * 0.4,

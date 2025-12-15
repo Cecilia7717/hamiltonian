@@ -1,6 +1,6 @@
 // ============ PARAMETERS ============
 int m = 6;      // width  (columns)
-int n = 4;      // height (rows)
+int n = 6;      // height (rows)
 int cellSize = 30;
 int margin = 20;
 
