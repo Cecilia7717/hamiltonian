@@ -1,6 +1,6 @@
 // ============ PARAMETERS ============
 int m = 6;      // width  (columns)
-int n = 6;      // height (rows)
+int n = 2;      // height (rows)
 int cellSize = 30;
 int margin = 20;
 
@@ -35,21 +35,21 @@ void explore(ArrayList<PVector> path, PVector cur) {
   ArrayList<PVector> newPath = new ArrayList<PVector>(path);
   newPath.add(cur);
 
-  // t = (m-1, n-1)
-  //if (cur.x == m-1 && cur.y == n-1) {
-  //  if (newPath.size() == m * n) {
-  //    allPaths.add(newPath);
-  //  }
-  //  return;
-  //}
-  
-  // t = (0, n-1)
-  if (cur.x == 0 && cur.y == n-1) {
+   //t = (m-1, n-1)
+  if (cur.x == m-1 && cur.y == n-1) {
     if (newPath.size() == m * n) {
       allPaths.add(newPath);
     }
     return;
   }
+  
+  //// t = (0, n-1)
+  //if (cur.x == 0 && cur.y == n-1) {
+  //  if (newPath.size() == m * n) {
+  //    allPaths.add(newPath);
+  //  }
+  //  return;
+  //}
   
   // directions: RIGHT, DOWN, LEFT, UP
   int[][] dirs = {
@@ -241,7 +241,7 @@ void savePathsToFile() {
     lines.add(sb.toString());
   }
 
-  String filename = "paths_m" + m + "_n" + n + ".txt";
+  String filename = "paths_m" + m + "_n" + n + "_diff.txt";
   saveStrings(filename, lines.toArray(new String[0]));
   println("Saved paths to " + filename);
 }
