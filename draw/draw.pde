@@ -13,7 +13,7 @@ boolean savedImage = false;
 String inputFile;
 
 void setup() {
-  inputFile = "/Users/cc/Desktop/hamiltonian/all_paths/paths_m6_n6.txt";  
+  inputFile = "/Users/chenzhuo/Desktop/hamiltonian/all_paths/paths_m2_n2_diff.txt";  
   loadPathsFromFile(inputFile);
 
   // create image directly (see next section)
@@ -45,9 +45,26 @@ void renderAndSave() {
 
     HashSet<String> redCells  = horizontalRunsOfLengthM(path);
     HashSet<String> blueCells = verticalRunsOfLengthN(path);
-    
+    ArrayList<EdgePoint> greenEdgePoints = new ArrayList<EdgePoint>();
+    if (redCells.isEmpty() && blueCells.isEmpty()){
+      greenEdgePoints = findGreenEdgePoints(path);
+    }
+  
+    HashSet<String> greenCells = new HashSet<String>();
+    for (EdgePoint a : greenEdgePoints) {
+      greenCells.add(a.x + "," + a.y);
+    }
+
     drawGrid(pg);
-    drawColoredCells(pg, redCells, blueCells);
+    drawColoredCells(pg, redCells, greenCells, blueCells);
+    for (EdgePoint a : greenEdgePoints) {
+      float yLine = (a.y + 1) * cellSize;
+      pg.stroke(0, 180);
+      pg.strokeWeight(5);
+      pg.line(0, yLine, m * cellSize, yLine);
+    }
+    pg.strokeWeight(1);
+
     drawPath(pg, path);
 
     pg.popMatrix();
@@ -58,6 +75,14 @@ void renderAndSave() {
   String out = outputImagePath(inputFile);
   pg.save(out);
   println("Saved image to: " + out);
+}
+
+class EdgePoint {
+  int x, y;
+  EdgePoint(int x, int y) {
+    this.x = x;
+    this.y = y;
+  }
 }
 
 
@@ -195,22 +220,22 @@ void drawPath(PGraphics pg, ArrayList<PVector> path) {
   pg.ellipse(cellSize / 2, cellSize / 2,
              cellSize * 0.4, cellSize * 0.4);
 
-  // end (0, n-1)
-  pg.fill(200, 0, 0);
-  pg.ellipse(
-    cellSize / 2,
-    (n - 1) * cellSize + cellSize / 2,
-    cellSize * 0.4,
-    cellSize * 0.4
-  );
-  
-  //// end = (m-1,n-1)
-  //pg.fill(200,0,0);
+  //// end (0, n-1)
+  //pg.fill(200, 0, 0);
   //pg.ellipse(
-  //  (m-1)*cellSize + cellSize/2,
-  //  (n-1)*cellSize + cellSize/2,
-  //  cellSize*0.4, cellSize*0.4
+  //  cellSize / 2,
+  //  (n - 1) * cellSize + cellSize / 2,
+  //  cellSize * 0.4,
+  //  cellSize * 0.4
   //);
+  
+  // end = (m-1,n-1)
+  pg.fill(200,0,0);
+  pg.ellipse(
+    (m-1)*cellSize + cellSize/2,
+    (n-1)*cellSize + cellSize/2,
+    cellSize*0.4, cellSize*0.4
+  );
 }
 
 HashSet<String> verticalRunsOfLengthN(ArrayList<PVector> path) {
@@ -243,6 +268,59 @@ HashSet<String> verticalRunsOfLengthN(ArrayList<PVector> path) {
   }
 
   return blueCells;
+}
+
+ArrayList<EdgePoint> findGreenEdgePoints(ArrayList<PVector> path) {
+  ArrayList<EdgePoint> result = new ArrayList<EdgePoint>();
+
+  // 1) Build edgeSet = all points on left or right edge
+  HashSet<String> edgeSet = new HashSet<String>();
+  for (int y = 0; y < n; y++) {
+    edgeSet.add("0," + y);
+    edgeSet.add((m - 1) + "," + y);
+  }
+
+  int L = path.size();
+
+  // 2) Traverse path in order (skip start and end)
+  for (int i = 1; i <= L - 2; i++) {
+    PVector p = path.get(i);
+    int x0 = (int)p.x;
+    int y0 = (int)p.y;
+    String key = x0 + "," + y0;
+
+    // must be an edge point
+    if (!edgeSet.contains(key)) continue;
+    println("the current edge point:"+key);
+    //println(path);
+    // ---------- Condition A: prefix ----------
+    boolean prefixOK = true;
+    for (int j = 0; j < i; j++) {
+      
+      if ((int)path.get(j).y > y0) {
+        prefixOK = false;
+        break;
+      }
+    }
+    if (!prefixOK) continue;
+
+    // ---------- Condition B: suffix ----------
+    boolean suffixOK = true;
+    for (int j = i + 1; j < L; j++) {
+      println(path.get(j));
+      println(y0);
+      if ((int)path.get(j).y <= y0) {
+        suffixOK = false;
+        break;
+      }
+    }
+    if (!suffixOK) continue;
+    println("success"+x0+","+y0);
+    // Both conditions satisfied
+    result.add(new EdgePoint(x0, y0));
+  }
+
+  return result;
 }
 
 
@@ -281,13 +359,123 @@ HashSet<String> horizontalRunsOfLengthM(ArrayList<PVector> path) {
   return redCells;
 }
 
+
+HashSet<String> greenFromForwardRightEdge(ArrayList<PVector> path,
+                                         HashSet<String> redCells) {
+  HashSet<String> greenCells = new HashSet<String>();
+
+  boolean[][] visited = new boolean[m][n];
+
+  for (int t = 0; t < path.size(); t++) {
+    PVector cur = path.get(t);
+    int x = (int)cur.x;
+    int y0 = (int)cur.y;
+
+    visited[x][y0] = true;
+
+    // Only when we are on right edge x = m-1
+    if (x != m - 1) continue;
+
+    // Condition 1: all cells with y <= y0 are visited
+    boolean topComplete = true;
+    for (int yy = 0; yy <= y0 && topComplete; yy++) {
+      for (int xx = 0; xx < m; xx++) {
+        if (!visited[xx][yy]) {
+          topComplete = false;
+          break;
+        }
+      }
+    }
+
+    if (!topComplete) continue;
+
+    // Condition 2: exists a cell with y > y0 that is NOT visited
+    boolean bottomIncomplete = false;
+    for (int yy = y0 + 1; yy < n && !bottomIncomplete; yy++) {
+      for (int xx = 0; xx < m; xx++) {
+        if (!visited[xx][yy]) {
+          bottomIncomplete = true;
+          break;
+        }
+      }
+    }
+
+    if (!bottomIncomplete) continue;
+
+    String key = (m - 1) + "," + y0;
+
+    // Exception: if already red, do NOT color green
+    if (!redCells.contains(key)) {
+      greenCells.add(key);
+    }
+  }
+
+  return greenCells;
+}
+
+HashSet<String> greenFromBackwardEdge(ArrayList<PVector> path,
+                                      HashSet<String> redCells,
+                                      int edgeX) {
+  HashSet<String> greenCells = new HashSet<String>();
+
+  boolean[][] visited = new boolean[m][n];
+
+  for (int t = path.size() - 1; t >= 0; t--) {
+    PVector cur = path.get(t);
+    int x = (int)cur.x;
+    int y0 = (int)cur.y;
+
+    visited[x][y0] = true;
+
+    // Only check when we are on the chosen edge
+    if (x != edgeX) continue;
+
+    // Condition 1: all cells with y >= y0 are visited (bottom complete)
+    boolean bottomComplete = true;
+    for (int yy = y0; yy < n && bottomComplete; yy++) {
+      for (int xx = 0; xx < m; xx++) {
+        if (!visited[xx][yy]) {
+          bottomComplete = false;
+          break;
+        }
+      }
+    }
+
+    if (!bottomComplete) continue;
+
+    // Condition 2: exists a cell with y < y0 that is NOT visited (top incomplete)
+    boolean topIncomplete = false;
+    for (int yy = 0; yy < y0 && !topIncomplete; yy++) {
+      for (int xx = 0; xx < m; xx++) {
+        if (!visited[xx][yy]) {
+          topIncomplete = true;
+          break;
+        }
+      }
+    }
+
+    if (!topIncomplete) continue;
+
+    String key = edgeX + "," + y0;
+
+    // Exception: if already red, do NOT color green
+    if (!redCells.contains(key)) {
+      greenCells.add(key);
+    }
+  }
+
+  return greenCells;
+}
+
+
 void drawColoredCells(PGraphics pg,
                       HashSet<String> redCells,
+                      HashSet<String> greenCells,
                       HashSet<String> blueCells) {
 
   pg.noStroke();
 
-  // draw red cells (horizontal m-runs)
+  // 1) RED (horizontal m-runs)
   pg.fill(255, 150, 150, 120);
   for (String s : redCells) {
     String[] xy = split(s, ",");
@@ -296,7 +484,17 @@ void drawColoredCells(PGraphics pg,
     pg.rect(x * cellSize, y * cellSize, cellSize, cellSize);
   }
 
-  // draw blue cells (vertical n-runs)
+  // 2) GREEN (boundary cut condition), but DO NOT overwrite red
+  pg.fill(150, 255, 150, 120);
+  for (String s : greenCells) {
+    if (redCells.contains(s)) continue;  // your exception
+    String[] xy = split(s, ",");
+    int x = int(xy[0]);
+    int y = int(xy[1]);
+    pg.rect(x * cellSize, y * cellSize, cellSize, cellSize);
+  }
+
+  // 3) BLUE (vertical n-runs)
   pg.fill(150, 150, 255, 150);
   for (String s : blueCells) {
     String[] xy = split(s, ",");
