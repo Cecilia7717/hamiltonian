@@ -13,7 +13,7 @@ boolean savedImage = false;
 String inputFile;
 
 void setup() {
-  inputFile = "/Users/chenzhuo/Desktop/hamiltonian/all_paths/paths_m2_n2.txt";  
+  inputFile = "/Users/chenzhuo/Desktop/hamiltonian/all_paths/paths_m3_n7_diff.txt";  
   loadPathsFromFile(inputFile);
 
   // create image directly (see next section)
@@ -336,22 +336,22 @@ void drawPath(PGraphics pg, ArrayList<PVector> path) {
   pg.ellipse(cellSize / 2, cellSize / 2,
              cellSize * 0.4, cellSize * 0.4);
 
-  // end (0, n-1)
-  pg.fill(200, 0, 0);
-  pg.ellipse(
-    cellSize / 2,
-    (n - 1) * cellSize + cellSize / 2,
-    cellSize * 0.4,
-    cellSize * 0.4
-  );
-  
-  //// end = (m-1,n-1)
-  //pg.fill(200,0,0);
+  //// end (0, n-1)
+  //pg.fill(200, 0, 0);
   //pg.ellipse(
-  //  (m-1)*cellSize + cellSize/2,
-  //  (n-1)*cellSize + cellSize/2,
-  //  cellSize*0.4, cellSize*0.4
+  //  cellSize / 2,
+  //  (n - 1) * cellSize + cellSize / 2,
+  //  cellSize * 0.4,
+  //  cellSize * 0.4
   //);
+  
+  // end = (m-1,n-1)
+  pg.fill(200,0,0);
+  pg.ellipse(
+    (m-1)*cellSize + cellSize/2,
+    (n-1)*cellSize + cellSize/2,
+    cellSize*0.4, cellSize*0.4
+  );
 }
 
 void colorVerticalCutSides(PGraphics pg, int x,
