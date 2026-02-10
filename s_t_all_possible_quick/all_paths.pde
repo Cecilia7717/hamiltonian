@@ -1,5 +1,5 @@
-int m;      // width
-int n;      // height
+int m = 14;      // width
+int n = 3;      // height
 int cellSize = 30;
 int margin = 20;
 
@@ -12,12 +12,6 @@ PVector T;
 
 void setup() {
   size(1800, 1400);
-
-  for (int mm = 2; mm <= 10; mm++) {
-    for (int nn = 2; nn <= 10; nn++) {
-
-      m = mm;
-      n = nn;
 
       println("==== m=" + m + " n=" + n + " ====");
 
@@ -44,8 +38,7 @@ void setup() {
 
         }
       }
-    }
-  }
+
 
   exit();
 }
