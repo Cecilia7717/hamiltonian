@@ -1,0 +1,2242 @@
+Total valid 3-block combinations: 448
+
+  1.
+     R1 (bottom): C2 — m even > 2, n = 2
+     R2 (middle): C2 — m even > 2, n = 2
+     R3 (top):    C1 — m = 2
+
+  2.
+     R1 (bottom): C2 — m even > 2, n = 2
+     R2 (middle): C2 — m even > 2, n = 2
+     R3 (top):    C2 — m even > 2, n = 2
+
+  3.
+     R1 (bottom): C2 — m even > 2, n = 2
+     R2 (middle): C2 — m even > 2, n = 2
+     R3 (top):    C3 — m even > 2, n even > 2
+
+  4.
+     R1 (bottom): C2 — m even > 2, n = 2
+     R2 (middle): C2 — m even > 2, n = 2
+     R3 (top):    C4 — m even > 2, n = 3
+
+  5.
+     R1 (bottom): C2 — m even > 2, n = 2
+     R2 (middle): C2 — m even > 2, n = 2
+     R3 (top):    C5 — m even > 2, n odd > 3
+
+  6.
+     R1 (bottom): C2 — m even > 2, n = 2
+     R2 (middle): C2 — m even > 2, n = 2
+     R3 (top):    C6 — m = 3
+
+  7.
+     R1 (bottom): C2 — m even > 2, n = 2
+     R2 (middle): C2 — m even > 2, n = 2
+     R3 (top):    C7 — m odd > 3, n = 2
+
+  8.
+     R1 (bottom): C2 — m even > 2, n = 2
+     R2 (middle): C2 — m even > 2, n = 2
+     R3 (top):    C8 — m odd > 3, n even > 2
+
+  9.
+     R1 (bottom): C2 — m even > 2, n = 2
+     R2 (middle): C2 — m even > 2, n = 2
+     R3 (top):    C9 — m odd > 3, n odd
+
+ 10.
+     R1 (bottom): C2 — m even > 2, n = 2
+     R2 (middle): C3 — m even > 2, n even > 2
+     R3 (top):    C1 — m = 2
+
+ 11.
+     R1 (bottom): C2 — m even > 2, n = 2
+     R2 (middle): C3 — m even > 2, n even > 2
+     R3 (top):    C2 — m even > 2, n = 2
+
+ 12.
+     R1 (bottom): C2 — m even > 2, n = 2
+     R2 (middle): C3 — m even > 2, n even > 2
+     R3 (top):    C3 — m even > 2, n even > 2
+
+ 13.
+     R1 (bottom): C2 — m even > 2, n = 2
+     R2 (middle): C3 — m even > 2, n even > 2
+     R3 (top):    C4 — m even > 2, n = 3
+
+ 14.
+     R1 (bottom): C2 — m even > 2, n = 2
+     R2 (middle): C3 — m even > 2, n even > 2
+     R3 (top):    C5 — m even > 2, n odd > 3
+
+ 15.
+     R1 (bottom): C2 — m even > 2, n = 2
+     R2 (middle): C3 — m even > 2, n even > 2
+     R3 (top):    C6 — m = 3
+
+ 16.
+     R1 (bottom): C2 — m even > 2, n = 2
+     R2 (middle): C3 — m even > 2, n even > 2
+     R3 (top):    C7 — m odd > 3, n = 2
+
+ 17.
+     R1 (bottom): C2 — m even > 2, n = 2
+     R2 (middle): C3 — m even > 2, n even > 2
+     R3 (top):    C8 — m odd > 3, n even > 2
+
+ 18.
+     R1 (bottom): C2 — m even > 2, n = 2
+     R2 (middle): C3 — m even > 2, n even > 2
+     R3 (top):    C9 — m odd > 3, n odd
+
+ 19.
+     R1 (bottom): C2 — m even > 2, n = 2
+     R2 (middle): C4 — m even > 2, n = 3
+     R3 (top):    C1 — m = 2
+
+ 20.
+     R1 (bottom): C2 — m even > 2, n = 2
+     R2 (middle): C4 — m even > 2, n = 3
+     R3 (top):    C2 — m even > 2, n = 2
+
+ 21.
+     R1 (bottom): C2 — m even > 2, n = 2
+     R2 (middle): C4 — m even > 2, n = 3
+     R3 (top):    C3 — m even > 2, n even > 2
+
+ 22.
+     R1 (bottom): C2 — m even > 2, n = 2
+     R2 (middle): C4 — m even > 2, n = 3
+     R3 (top):    C4 — m even > 2, n = 3
+
+ 23.
+     R1 (bottom): C2 — m even > 2, n = 2
+     R2 (middle): C4 — m even > 2, n = 3
+     R3 (top):    C5 — m even > 2, n odd > 3
+
+ 24.
+     R1 (bottom): C2 — m even > 2, n = 2
+     R2 (middle): C4 — m even > 2, n = 3
+     R3 (top):    C6 — m = 3
+
+ 25.
+     R1 (bottom): C2 — m even > 2, n = 2
+     R2 (middle): C4 — m even > 2, n = 3
+     R3 (top):    C7 — m odd > 3, n = 2
+
+ 26.
+     R1 (bottom): C2 — m even > 2, n = 2
+     R2 (middle): C4 — m even > 2, n = 3
+     R3 (top):    C8 — m odd > 3, n even > 2
+
+ 27.
+     R1 (bottom): C2 — m even > 2, n = 2
+     R2 (middle): C4 — m even > 2, n = 3
+     R3 (top):    C9 — m odd > 3, n odd
+
+ 28.
+     R1 (bottom): C2 — m even > 2, n = 2
+     R2 (middle): C5 — m even > 2, n odd > 3
+     R3 (top):    C1 — m = 2
+
+ 29.
+     R1 (bottom): C2 — m even > 2, n = 2
+     R2 (middle): C5 — m even > 2, n odd > 3
+     R3 (top):    C2 — m even > 2, n = 2
+
+ 30.
+     R1 (bottom): C2 — m even > 2, n = 2
+     R2 (middle): C5 — m even > 2, n odd > 3
+     R3 (top):    C3 — m even > 2, n even > 2
+
+ 31.
+     R1 (bottom): C2 — m even > 2, n = 2
+     R2 (middle): C5 — m even > 2, n odd > 3
+     R3 (top):    C4 — m even > 2, n = 3
+
+ 32.
+     R1 (bottom): C2 — m even > 2, n = 2
+     R2 (middle): C5 — m even > 2, n odd > 3
+     R3 (top):    C5 — m even > 2, n odd > 3
+
+ 33.
+     R1 (bottom): C2 — m even > 2, n = 2
+     R2 (middle): C5 — m even > 2, n odd > 3
+     R3 (top):    C6 — m = 3
+
+ 34.
+     R1 (bottom): C2 — m even > 2, n = 2
+     R2 (middle): C5 — m even > 2, n odd > 3
+     R3 (top):    C7 — m odd > 3, n = 2
+
+ 35.
+     R1 (bottom): C2 — m even > 2, n = 2
+     R2 (middle): C5 — m even > 2, n odd > 3
+     R3 (top):    C8 — m odd > 3, n even > 2
+
+ 36.
+     R1 (bottom): C2 — m even > 2, n = 2
+     R2 (middle): C5 — m even > 2, n odd > 3
+     R3 (top):    C9 — m odd > 3, n odd
+
+ 37.
+     R1 (bottom): C2 — m even > 2, n = 2
+     R2 (middle): C6 — m = 3
+     R3 (top):    C1 — m = 2
+
+ 38.
+     R1 (bottom): C2 — m even > 2, n = 2
+     R2 (middle): C7 — m odd > 3, n = 2
+     R3 (top):    C1 — m = 2
+
+ 39.
+     R1 (bottom): C2 — m even > 2, n = 2
+     R2 (middle): C7 — m odd > 3, n = 2
+     R3 (top):    C2 — m even > 2, n = 2
+
+ 40.
+     R1 (bottom): C2 — m even > 2, n = 2
+     R2 (middle): C7 — m odd > 3, n = 2
+     R3 (top):    C3 — m even > 2, n even > 2
+
+ 41.
+     R1 (bottom): C2 — m even > 2, n = 2
+     R2 (middle): C7 — m odd > 3, n = 2
+     R3 (top):    C4 — m even > 2, n = 3
+
+ 42.
+     R1 (bottom): C2 — m even > 2, n = 2
+     R2 (middle): C7 — m odd > 3, n = 2
+     R3 (top):    C5 — m even > 2, n odd > 3
+
+ 43.
+     R1 (bottom): C2 — m even > 2, n = 2
+     R2 (middle): C7 — m odd > 3, n = 2
+     R3 (top):    C6 — m = 3
+
+ 44.
+     R1 (bottom): C2 — m even > 2, n = 2
+     R2 (middle): C7 — m odd > 3, n = 2
+     R3 (top):    C7 — m odd > 3, n = 2
+
+ 45.
+     R1 (bottom): C2 — m even > 2, n = 2
+     R2 (middle): C7 — m odd > 3, n = 2
+     R3 (top):    C8 — m odd > 3, n even > 2
+
+ 46.
+     R1 (bottom): C2 — m even > 2, n = 2
+     R2 (middle): C7 — m odd > 3, n = 2
+     R3 (top):    C9 — m odd > 3, n odd
+
+ 47.
+     R1 (bottom): C2 — m even > 2, n = 2
+     R2 (middle): C8 — m odd > 3, n even > 2
+     R3 (top):    C1 — m = 2
+
+ 48.
+     R1 (bottom): C2 — m even > 2, n = 2
+     R2 (middle): C8 — m odd > 3, n even > 2
+     R3 (top):    C2 — m even > 2, n = 2
+
+ 49.
+     R1 (bottom): C2 — m even > 2, n = 2
+     R2 (middle): C8 — m odd > 3, n even > 2
+     R3 (top):    C3 — m even > 2, n even > 2
+
+ 50.
+     R1 (bottom): C2 — m even > 2, n = 2
+     R2 (middle): C8 — m odd > 3, n even > 2
+     R3 (top):    C4 — m even > 2, n = 3
+
+ 51.
+     R1 (bottom): C2 — m even > 2, n = 2
+     R2 (middle): C8 — m odd > 3, n even > 2
+     R3 (top):    C5 — m even > 2, n odd > 3
+
+ 52.
+     R1 (bottom): C2 — m even > 2, n = 2
+     R2 (middle): C8 — m odd > 3, n even > 2
+     R3 (top):    C6 — m = 3
+
+ 53.
+     R1 (bottom): C2 — m even > 2, n = 2
+     R2 (middle): C8 — m odd > 3, n even > 2
+     R3 (top):    C7 — m odd > 3, n = 2
+
+ 54.
+     R1 (bottom): C2 — m even > 2, n = 2
+     R2 (middle): C8 — m odd > 3, n even > 2
+     R3 (top):    C8 — m odd > 3, n even > 2
+
+ 55.
+     R1 (bottom): C2 — m even > 2, n = 2
+     R2 (middle): C8 — m odd > 3, n even > 2
+     R3 (top):    C9 — m odd > 3, n odd
+
+ 56.
+     R1 (bottom): C2 — m even > 2, n = 2
+     R2 (middle): C9 — m odd > 3, n odd
+     R3 (top):    C1 — m = 2
+
+ 57.
+     R1 (bottom): C2 — m even > 2, n = 2
+     R2 (middle): C9 — m odd > 3, n odd
+     R3 (top):    C2 — m even > 2, n = 2
+
+ 58.
+     R1 (bottom): C2 — m even > 2, n = 2
+     R2 (middle): C9 — m odd > 3, n odd
+     R3 (top):    C3 — m even > 2, n even > 2
+
+ 59.
+     R1 (bottom): C2 — m even > 2, n = 2
+     R2 (middle): C9 — m odd > 3, n odd
+     R3 (top):    C4 — m even > 2, n = 3
+
+ 60.
+     R1 (bottom): C2 — m even > 2, n = 2
+     R2 (middle): C9 — m odd > 3, n odd
+     R3 (top):    C5 — m even > 2, n odd > 3
+
+ 61.
+     R1 (bottom): C2 — m even > 2, n = 2
+     R2 (middle): C9 — m odd > 3, n odd
+     R3 (top):    C6 — m = 3
+
+ 62.
+     R1 (bottom): C2 — m even > 2, n = 2
+     R2 (middle): C9 — m odd > 3, n odd
+     R3 (top):    C7 — m odd > 3, n = 2
+
+ 63.
+     R1 (bottom): C2 — m even > 2, n = 2
+     R2 (middle): C9 — m odd > 3, n odd
+     R3 (top):    C8 — m odd > 3, n even > 2
+
+ 64.
+     R1 (bottom): C2 — m even > 2, n = 2
+     R2 (middle): C9 — m odd > 3, n odd
+     R3 (top):    C9 — m odd > 3, n odd
+
+ 65.
+     R1 (bottom): C3 — m even > 2, n even > 2
+     R2 (middle): C2 — m even > 2, n = 2
+     R3 (top):    C1 — m = 2
+
+ 66.
+     R1 (bottom): C3 — m even > 2, n even > 2
+     R2 (middle): C2 — m even > 2, n = 2
+     R3 (top):    C2 — m even > 2, n = 2
+
+ 67.
+     R1 (bottom): C3 — m even > 2, n even > 2
+     R2 (middle): C2 — m even > 2, n = 2
+     R3 (top):    C3 — m even > 2, n even > 2
+
+ 68.
+     R1 (bottom): C3 — m even > 2, n even > 2
+     R2 (middle): C2 — m even > 2, n = 2
+     R3 (top):    C4 — m even > 2, n = 3
+
+ 69.
+     R1 (bottom): C3 — m even > 2, n even > 2
+     R2 (middle): C2 — m even > 2, n = 2
+     R3 (top):    C5 — m even > 2, n odd > 3
+
+ 70.
+     R1 (bottom): C3 — m even > 2, n even > 2
+     R2 (middle): C2 — m even > 2, n = 2
+     R3 (top):    C6 — m = 3
+
+ 71.
+     R1 (bottom): C3 — m even > 2, n even > 2
+     R2 (middle): C2 — m even > 2, n = 2
+     R3 (top):    C7 — m odd > 3, n = 2
+
+ 72.
+     R1 (bottom): C3 — m even > 2, n even > 2
+     R2 (middle): C2 — m even > 2, n = 2
+     R3 (top):    C8 — m odd > 3, n even > 2
+
+ 73.
+     R1 (bottom): C3 — m even > 2, n even > 2
+     R2 (middle): C2 — m even > 2, n = 2
+     R3 (top):    C9 — m odd > 3, n odd
+
+ 74.
+     R1 (bottom): C3 — m even > 2, n even > 2
+     R2 (middle): C3 — m even > 2, n even > 2
+     R3 (top):    C1 — m = 2
+
+ 75.
+     R1 (bottom): C3 — m even > 2, n even > 2
+     R2 (middle): C3 — m even > 2, n even > 2
+     R3 (top):    C2 — m even > 2, n = 2
+
+ 76.
+     R1 (bottom): C3 — m even > 2, n even > 2
+     R2 (middle): C3 — m even > 2, n even > 2
+     R3 (top):    C3 — m even > 2, n even > 2
+
+ 77.
+     R1 (bottom): C3 — m even > 2, n even > 2
+     R2 (middle): C3 — m even > 2, n even > 2
+     R3 (top):    C4 — m even > 2, n = 3
+
+ 78.
+     R1 (bottom): C3 — m even > 2, n even > 2
+     R2 (middle): C3 — m even > 2, n even > 2
+     R3 (top):    C5 — m even > 2, n odd > 3
+
+ 79.
+     R1 (bottom): C3 — m even > 2, n even > 2
+     R2 (middle): C3 — m even > 2, n even > 2
+     R3 (top):    C6 — m = 3
+
+ 80.
+     R1 (bottom): C3 — m even > 2, n even > 2
+     R2 (middle): C3 — m even > 2, n even > 2
+     R3 (top):    C7 — m odd > 3, n = 2
+
+ 81.
+     R1 (bottom): C3 — m even > 2, n even > 2
+     R2 (middle): C3 — m even > 2, n even > 2
+     R3 (top):    C8 — m odd > 3, n even > 2
+
+ 82.
+     R1 (bottom): C3 — m even > 2, n even > 2
+     R2 (middle): C3 — m even > 2, n even > 2
+     R3 (top):    C9 — m odd > 3, n odd
+
+ 83.
+     R1 (bottom): C3 — m even > 2, n even > 2
+     R2 (middle): C4 — m even > 2, n = 3
+     R3 (top):    C1 — m = 2
+
+ 84.
+     R1 (bottom): C3 — m even > 2, n even > 2
+     R2 (middle): C4 — m even > 2, n = 3
+     R3 (top):    C2 — m even > 2, n = 2
+
+ 85.
+     R1 (bottom): C3 — m even > 2, n even > 2
+     R2 (middle): C4 — m even > 2, n = 3
+     R3 (top):    C3 — m even > 2, n even > 2
+
+ 86.
+     R1 (bottom): C3 — m even > 2, n even > 2
+     R2 (middle): C4 — m even > 2, n = 3
+     R3 (top):    C4 — m even > 2, n = 3
+
+ 87.
+     R1 (bottom): C3 — m even > 2, n even > 2
+     R2 (middle): C4 — m even > 2, n = 3
+     R3 (top):    C5 — m even > 2, n odd > 3
+
+ 88.
+     R1 (bottom): C3 — m even > 2, n even > 2
+     R2 (middle): C4 — m even > 2, n = 3
+     R3 (top):    C6 — m = 3
+
+ 89.
+     R1 (bottom): C3 — m even > 2, n even > 2
+     R2 (middle): C4 — m even > 2, n = 3
+     R3 (top):    C7 — m odd > 3, n = 2
+
+ 90.
+     R1 (bottom): C3 — m even > 2, n even > 2
+     R2 (middle): C4 — m even > 2, n = 3
+     R3 (top):    C8 — m odd > 3, n even > 2
+
+ 91.
+     R1 (bottom): C3 — m even > 2, n even > 2
+     R2 (middle): C4 — m even > 2, n = 3
+     R3 (top):    C9 — m odd > 3, n odd
+
+ 92.
+     R1 (bottom): C3 — m even > 2, n even > 2
+     R2 (middle): C5 — m even > 2, n odd > 3
+     R3 (top):    C1 — m = 2
+
+ 93.
+     R1 (bottom): C3 — m even > 2, n even > 2
+     R2 (middle): C5 — m even > 2, n odd > 3
+     R3 (top):    C2 — m even > 2, n = 2
+
+ 94.
+     R1 (bottom): C3 — m even > 2, n even > 2
+     R2 (middle): C5 — m even > 2, n odd > 3
+     R3 (top):    C3 — m even > 2, n even > 2
+
+ 95.
+     R1 (bottom): C3 — m even > 2, n even > 2
+     R2 (middle): C5 — m even > 2, n odd > 3
+     R3 (top):    C4 — m even > 2, n = 3
+
+ 96.
+     R1 (bottom): C3 — m even > 2, n even > 2
+     R2 (middle): C5 — m even > 2, n odd > 3
+     R3 (top):    C5 — m even > 2, n odd > 3
+
+ 97.
+     R1 (bottom): C3 — m even > 2, n even > 2
+     R2 (middle): C5 — m even > 2, n odd > 3
+     R3 (top):    C6 — m = 3
+
+ 98.
+     R1 (bottom): C3 — m even > 2, n even > 2
+     R2 (middle): C5 — m even > 2, n odd > 3
+     R3 (top):    C7 — m odd > 3, n = 2
+
+ 99.
+     R1 (bottom): C3 — m even > 2, n even > 2
+     R2 (middle): C5 — m even > 2, n odd > 3
+     R3 (top):    C8 — m odd > 3, n even > 2
+
+100.
+     R1 (bottom): C3 — m even > 2, n even > 2
+     R2 (middle): C5 — m even > 2, n odd > 3
+     R3 (top):    C9 — m odd > 3, n odd
+
+101.
+     R1 (bottom): C3 — m even > 2, n even > 2
+     R2 (middle): C6 — m = 3
+     R3 (top):    C1 — m = 2
+
+102.
+     R1 (bottom): C3 — m even > 2, n even > 2
+     R2 (middle): C7 — m odd > 3, n = 2
+     R3 (top):    C1 — m = 2
+
+103.
+     R1 (bottom): C3 — m even > 2, n even > 2
+     R2 (middle): C7 — m odd > 3, n = 2
+     R3 (top):    C2 — m even > 2, n = 2
+
+104.
+     R1 (bottom): C3 — m even > 2, n even > 2
+     R2 (middle): C7 — m odd > 3, n = 2
+     R3 (top):    C3 — m even > 2, n even > 2
+
+105.
+     R1 (bottom): C3 — m even > 2, n even > 2
+     R2 (middle): C7 — m odd > 3, n = 2
+     R3 (top):    C4 — m even > 2, n = 3
+
+106.
+     R1 (bottom): C3 — m even > 2, n even > 2
+     R2 (middle): C7 — m odd > 3, n = 2
+     R3 (top):    C5 — m even > 2, n odd > 3
+
+107.
+     R1 (bottom): C3 — m even > 2, n even > 2
+     R2 (middle): C7 — m odd > 3, n = 2
+     R3 (top):    C6 — m = 3
+
+108.
+     R1 (bottom): C3 — m even > 2, n even > 2
+     R2 (middle): C7 — m odd > 3, n = 2
+     R3 (top):    C7 — m odd > 3, n = 2
+
+109.
+     R1 (bottom): C3 — m even > 2, n even > 2
+     R2 (middle): C7 — m odd > 3, n = 2
+     R3 (top):    C8 — m odd > 3, n even > 2
+
+110.
+     R1 (bottom): C3 — m even > 2, n even > 2
+     R2 (middle): C7 — m odd > 3, n = 2
+     R3 (top):    C9 — m odd > 3, n odd
+
+111.
+     R1 (bottom): C3 — m even > 2, n even > 2
+     R2 (middle): C8 — m odd > 3, n even > 2
+     R3 (top):    C1 — m = 2
+
+112.
+     R1 (bottom): C3 — m even > 2, n even > 2
+     R2 (middle): C8 — m odd > 3, n even > 2
+     R3 (top):    C2 — m even > 2, n = 2
+
+113.
+     R1 (bottom): C3 — m even > 2, n even > 2
+     R2 (middle): C8 — m odd > 3, n even > 2
+     R3 (top):    C3 — m even > 2, n even > 2
+
+114.
+     R1 (bottom): C3 — m even > 2, n even > 2
+     R2 (middle): C8 — m odd > 3, n even > 2
+     R3 (top):    C4 — m even > 2, n = 3
+
+115.
+     R1 (bottom): C3 — m even > 2, n even > 2
+     R2 (middle): C8 — m odd > 3, n even > 2
+     R3 (top):    C5 — m even > 2, n odd > 3
+
+116.
+     R1 (bottom): C3 — m even > 2, n even > 2
+     R2 (middle): C8 — m odd > 3, n even > 2
+     R3 (top):    C6 — m = 3
+
+117.
+     R1 (bottom): C3 — m even > 2, n even > 2
+     R2 (middle): C8 — m odd > 3, n even > 2
+     R3 (top):    C7 — m odd > 3, n = 2
+
+118.
+     R1 (bottom): C3 — m even > 2, n even > 2
+     R2 (middle): C8 — m odd > 3, n even > 2
+     R3 (top):    C8 — m odd > 3, n even > 2
+
+119.
+     R1 (bottom): C3 — m even > 2, n even > 2
+     R2 (middle): C8 — m odd > 3, n even > 2
+     R3 (top):    C9 — m odd > 3, n odd
+
+120.
+     R1 (bottom): C3 — m even > 2, n even > 2
+     R2 (middle): C9 — m odd > 3, n odd
+     R3 (top):    C1 — m = 2
+
+121.
+     R1 (bottom): C3 — m even > 2, n even > 2
+     R2 (middle): C9 — m odd > 3, n odd
+     R3 (top):    C2 — m even > 2, n = 2
+
+122.
+     R1 (bottom): C3 — m even > 2, n even > 2
+     R2 (middle): C9 — m odd > 3, n odd
+     R3 (top):    C3 — m even > 2, n even > 2
+
+123.
+     R1 (bottom): C3 — m even > 2, n even > 2
+     R2 (middle): C9 — m odd > 3, n odd
+     R3 (top):    C4 — m even > 2, n = 3
+
+124.
+     R1 (bottom): C3 — m even > 2, n even > 2
+     R2 (middle): C9 — m odd > 3, n odd
+     R3 (top):    C5 — m even > 2, n odd > 3
+
+125.
+     R1 (bottom): C3 — m even > 2, n even > 2
+     R2 (middle): C9 — m odd > 3, n odd
+     R3 (top):    C6 — m = 3
+
+126.
+     R1 (bottom): C3 — m even > 2, n even > 2
+     R2 (middle): C9 — m odd > 3, n odd
+     R3 (top):    C7 — m odd > 3, n = 2
+
+127.
+     R1 (bottom): C3 — m even > 2, n even > 2
+     R2 (middle): C9 — m odd > 3, n odd
+     R3 (top):    C8 — m odd > 3, n even > 2
+
+128.
+     R1 (bottom): C3 — m even > 2, n even > 2
+     R2 (middle): C9 — m odd > 3, n odd
+     R3 (top):    C9 — m odd > 3, n odd
+
+129.
+     R1 (bottom): C4 — m even > 2, n = 3
+     R2 (middle): C2 — m even > 2, n = 2
+     R3 (top):    C1 — m = 2
+
+130.
+     R1 (bottom): C4 — m even > 2, n = 3
+     R2 (middle): C2 — m even > 2, n = 2
+     R3 (top):    C2 — m even > 2, n = 2
+
+131.
+     R1 (bottom): C4 — m even > 2, n = 3
+     R2 (middle): C2 — m even > 2, n = 2
+     R3 (top):    C3 — m even > 2, n even > 2
+
+132.
+     R1 (bottom): C4 — m even > 2, n = 3
+     R2 (middle): C2 — m even > 2, n = 2
+     R3 (top):    C4 — m even > 2, n = 3
+
+133.
+     R1 (bottom): C4 — m even > 2, n = 3
+     R2 (middle): C2 — m even > 2, n = 2
+     R3 (top):    C5 — m even > 2, n odd > 3
+
+134.
+     R1 (bottom): C4 — m even > 2, n = 3
+     R2 (middle): C2 — m even > 2, n = 2
+     R3 (top):    C6 — m = 3
+
+135.
+     R1 (bottom): C4 — m even > 2, n = 3
+     R2 (middle): C2 — m even > 2, n = 2
+     R3 (top):    C7 — m odd > 3, n = 2
+
+136.
+     R1 (bottom): C4 — m even > 2, n = 3
+     R2 (middle): C2 — m even > 2, n = 2
+     R3 (top):    C8 — m odd > 3, n even > 2
+
+137.
+     R1 (bottom): C4 — m even > 2, n = 3
+     R2 (middle): C2 — m even > 2, n = 2
+     R3 (top):    C9 — m odd > 3, n odd
+
+138.
+     R1 (bottom): C4 — m even > 2, n = 3
+     R2 (middle): C3 — m even > 2, n even > 2
+     R3 (top):    C1 — m = 2
+
+139.
+     R1 (bottom): C4 — m even > 2, n = 3
+     R2 (middle): C3 — m even > 2, n even > 2
+     R3 (top):    C2 — m even > 2, n = 2
+
+140.
+     R1 (bottom): C4 — m even > 2, n = 3
+     R2 (middle): C3 — m even > 2, n even > 2
+     R3 (top):    C3 — m even > 2, n even > 2
+
+141.
+     R1 (bottom): C4 — m even > 2, n = 3
+     R2 (middle): C3 — m even > 2, n even > 2
+     R3 (top):    C4 — m even > 2, n = 3
+
+142.
+     R1 (bottom): C4 — m even > 2, n = 3
+     R2 (middle): C3 — m even > 2, n even > 2
+     R3 (top):    C5 — m even > 2, n odd > 3
+
+143.
+     R1 (bottom): C4 — m even > 2, n = 3
+     R2 (middle): C3 — m even > 2, n even > 2
+     R3 (top):    C6 — m = 3
+
+144.
+     R1 (bottom): C4 — m even > 2, n = 3
+     R2 (middle): C3 — m even > 2, n even > 2
+     R3 (top):    C7 — m odd > 3, n = 2
+
+145.
+     R1 (bottom): C4 — m even > 2, n = 3
+     R2 (middle): C3 — m even > 2, n even > 2
+     R3 (top):    C8 — m odd > 3, n even > 2
+
+146.
+     R1 (bottom): C4 — m even > 2, n = 3
+     R2 (middle): C3 — m even > 2, n even > 2
+     R3 (top):    C9 — m odd > 3, n odd
+
+147.
+     R1 (bottom): C4 — m even > 2, n = 3
+     R2 (middle): C4 — m even > 2, n = 3
+     R3 (top):    C1 — m = 2
+
+148.
+     R1 (bottom): C4 — m even > 2, n = 3
+     R2 (middle): C4 — m even > 2, n = 3
+     R3 (top):    C2 — m even > 2, n = 2
+
+149.
+     R1 (bottom): C4 — m even > 2, n = 3
+     R2 (middle): C4 — m even > 2, n = 3
+     R3 (top):    C3 — m even > 2, n even > 2
+
+150.
+     R1 (bottom): C4 — m even > 2, n = 3
+     R2 (middle): C4 — m even > 2, n = 3
+     R3 (top):    C4 — m even > 2, n = 3
+
+151.
+     R1 (bottom): C4 — m even > 2, n = 3
+     R2 (middle): C4 — m even > 2, n = 3
+     R3 (top):    C5 — m even > 2, n odd > 3
+
+152.
+     R1 (bottom): C4 — m even > 2, n = 3
+     R2 (middle): C4 — m even > 2, n = 3
+     R3 (top):    C6 — m = 3
+
+153.
+     R1 (bottom): C4 — m even > 2, n = 3
+     R2 (middle): C4 — m even > 2, n = 3
+     R3 (top):    C7 — m odd > 3, n = 2
+
+154.
+     R1 (bottom): C4 — m even > 2, n = 3
+     R2 (middle): C4 — m even > 2, n = 3
+     R3 (top):    C8 — m odd > 3, n even > 2
+
+155.
+     R1 (bottom): C4 — m even > 2, n = 3
+     R2 (middle): C4 — m even > 2, n = 3
+     R3 (top):    C9 — m odd > 3, n odd
+
+156.
+     R1 (bottom): C4 — m even > 2, n = 3
+     R2 (middle): C5 — m even > 2, n odd > 3
+     R3 (top):    C1 — m = 2
+
+157.
+     R1 (bottom): C4 — m even > 2, n = 3
+     R2 (middle): C5 — m even > 2, n odd > 3
+     R3 (top):    C2 — m even > 2, n = 2
+
+158.
+     R1 (bottom): C4 — m even > 2, n = 3
+     R2 (middle): C5 — m even > 2, n odd > 3
+     R3 (top):    C3 — m even > 2, n even > 2
+
+159.
+     R1 (bottom): C4 — m even > 2, n = 3
+     R2 (middle): C5 — m even > 2, n odd > 3
+     R3 (top):    C4 — m even > 2, n = 3
+
+160.
+     R1 (bottom): C4 — m even > 2, n = 3
+     R2 (middle): C5 — m even > 2, n odd > 3
+     R3 (top):    C5 — m even > 2, n odd > 3
+
+161.
+     R1 (bottom): C4 — m even > 2, n = 3
+     R2 (middle): C5 — m even > 2, n odd > 3
+     R3 (top):    C6 — m = 3
+
+162.
+     R1 (bottom): C4 — m even > 2, n = 3
+     R2 (middle): C5 — m even > 2, n odd > 3
+     R3 (top):    C7 — m odd > 3, n = 2
+
+163.
+     R1 (bottom): C4 — m even > 2, n = 3
+     R2 (middle): C5 — m even > 2, n odd > 3
+     R3 (top):    C8 — m odd > 3, n even > 2
+
+164.
+     R1 (bottom): C4 — m even > 2, n = 3
+     R2 (middle): C5 — m even > 2, n odd > 3
+     R3 (top):    C9 — m odd > 3, n odd
+
+165.
+     R1 (bottom): C4 — m even > 2, n = 3
+     R2 (middle): C6 — m = 3
+     R3 (top):    C1 — m = 2
+
+166.
+     R1 (bottom): C4 — m even > 2, n = 3
+     R2 (middle): C7 — m odd > 3, n = 2
+     R3 (top):    C1 — m = 2
+
+167.
+     R1 (bottom): C4 — m even > 2, n = 3
+     R2 (middle): C7 — m odd > 3, n = 2
+     R3 (top):    C2 — m even > 2, n = 2
+
+168.
+     R1 (bottom): C4 — m even > 2, n = 3
+     R2 (middle): C7 — m odd > 3, n = 2
+     R3 (top):    C3 — m even > 2, n even > 2
+
+169.
+     R1 (bottom): C4 — m even > 2, n = 3
+     R2 (middle): C7 — m odd > 3, n = 2
+     R3 (top):    C4 — m even > 2, n = 3
+
+170.
+     R1 (bottom): C4 — m even > 2, n = 3
+     R2 (middle): C7 — m odd > 3, n = 2
+     R3 (top):    C5 — m even > 2, n odd > 3
+
+171.
+     R1 (bottom): C4 — m even > 2, n = 3
+     R2 (middle): C7 — m odd > 3, n = 2
+     R3 (top):    C6 — m = 3
+
+172.
+     R1 (bottom): C4 — m even > 2, n = 3
+     R2 (middle): C7 — m odd > 3, n = 2
+     R3 (top):    C7 — m odd > 3, n = 2
+
+173.
+     R1 (bottom): C4 — m even > 2, n = 3
+     R2 (middle): C7 — m odd > 3, n = 2
+     R3 (top):    C8 — m odd > 3, n even > 2
+
+174.
+     R1 (bottom): C4 — m even > 2, n = 3
+     R2 (middle): C7 — m odd > 3, n = 2
+     R3 (top):    C9 — m odd > 3, n odd
+
+175.
+     R1 (bottom): C4 — m even > 2, n = 3
+     R2 (middle): C8 — m odd > 3, n even > 2
+     R3 (top):    C1 — m = 2
+
+176.
+     R1 (bottom): C4 — m even > 2, n = 3
+     R2 (middle): C8 — m odd > 3, n even > 2
+     R3 (top):    C2 — m even > 2, n = 2
+
+177.
+     R1 (bottom): C4 — m even > 2, n = 3
+     R2 (middle): C8 — m odd > 3, n even > 2
+     R3 (top):    C3 — m even > 2, n even > 2
+
+178.
+     R1 (bottom): C4 — m even > 2, n = 3
+     R2 (middle): C8 — m odd > 3, n even > 2
+     R3 (top):    C4 — m even > 2, n = 3
+
+179.
+     R1 (bottom): C4 — m even > 2, n = 3
+     R2 (middle): C8 — m odd > 3, n even > 2
+     R3 (top):    C5 — m even > 2, n odd > 3
+
+180.
+     R1 (bottom): C4 — m even > 2, n = 3
+     R2 (middle): C8 — m odd > 3, n even > 2
+     R3 (top):    C6 — m = 3
+
+181.
+     R1 (bottom): C4 — m even > 2, n = 3
+     R2 (middle): C8 — m odd > 3, n even > 2
+     R3 (top):    C7 — m odd > 3, n = 2
+
+182.
+     R1 (bottom): C4 — m even > 2, n = 3
+     R2 (middle): C8 — m odd > 3, n even > 2
+     R3 (top):    C8 — m odd > 3, n even > 2
+
+183.
+     R1 (bottom): C4 — m even > 2, n = 3
+     R2 (middle): C8 — m odd > 3, n even > 2
+     R3 (top):    C9 — m odd > 3, n odd
+
+184.
+     R1 (bottom): C4 — m even > 2, n = 3
+     R2 (middle): C9 — m odd > 3, n odd
+     R3 (top):    C1 — m = 2
+
+185.
+     R1 (bottom): C4 — m even > 2, n = 3
+     R2 (middle): C9 — m odd > 3, n odd
+     R3 (top):    C2 — m even > 2, n = 2
+
+186.
+     R1 (bottom): C4 — m even > 2, n = 3
+     R2 (middle): C9 — m odd > 3, n odd
+     R3 (top):    C3 — m even > 2, n even > 2
+
+187.
+     R1 (bottom): C4 — m even > 2, n = 3
+     R2 (middle): C9 — m odd > 3, n odd
+     R3 (top):    C4 — m even > 2, n = 3
+
+188.
+     R1 (bottom): C4 — m even > 2, n = 3
+     R2 (middle): C9 — m odd > 3, n odd
+     R3 (top):    C5 — m even > 2, n odd > 3
+
+189.
+     R1 (bottom): C4 — m even > 2, n = 3
+     R2 (middle): C9 — m odd > 3, n odd
+     R3 (top):    C6 — m = 3
+
+190.
+     R1 (bottom): C4 — m even > 2, n = 3
+     R2 (middle): C9 — m odd > 3, n odd
+     R3 (top):    C7 — m odd > 3, n = 2
+
+191.
+     R1 (bottom): C4 — m even > 2, n = 3
+     R2 (middle): C9 — m odd > 3, n odd
+     R3 (top):    C8 — m odd > 3, n even > 2
+
+192.
+     R1 (bottom): C4 — m even > 2, n = 3
+     R2 (middle): C9 — m odd > 3, n odd
+     R3 (top):    C9 — m odd > 3, n odd
+
+193.
+     R1 (bottom): C5 — m even > 2, n odd > 3
+     R2 (middle): C2 — m even > 2, n = 2
+     R3 (top):    C1 — m = 2
+
+194.
+     R1 (bottom): C5 — m even > 2, n odd > 3
+     R2 (middle): C2 — m even > 2, n = 2
+     R3 (top):    C2 — m even > 2, n = 2
+
+195.
+     R1 (bottom): C5 — m even > 2, n odd > 3
+     R2 (middle): C2 — m even > 2, n = 2
+     R3 (top):    C3 — m even > 2, n even > 2
+
+196.
+     R1 (bottom): C5 — m even > 2, n odd > 3
+     R2 (middle): C2 — m even > 2, n = 2
+     R3 (top):    C4 — m even > 2, n = 3
+
+197.
+     R1 (bottom): C5 — m even > 2, n odd > 3
+     R2 (middle): C2 — m even > 2, n = 2
+     R3 (top):    C5 — m even > 2, n odd > 3
+
+198.
+     R1 (bottom): C5 — m even > 2, n odd > 3
+     R2 (middle): C2 — m even > 2, n = 2
+     R3 (top):    C6 — m = 3
+
+199.
+     R1 (bottom): C5 — m even > 2, n odd > 3
+     R2 (middle): C2 — m even > 2, n = 2
+     R3 (top):    C7 — m odd > 3, n = 2
+
+200.
+     R1 (bottom): C5 — m even > 2, n odd > 3
+     R2 (middle): C2 — m even > 2, n = 2
+     R3 (top):    C8 — m odd > 3, n even > 2
+
+201.
+     R1 (bottom): C5 — m even > 2, n odd > 3
+     R2 (middle): C2 — m even > 2, n = 2
+     R3 (top):    C9 — m odd > 3, n odd
+
+202.
+     R1 (bottom): C5 — m even > 2, n odd > 3
+     R2 (middle): C3 — m even > 2, n even > 2
+     R3 (top):    C1 — m = 2
+
+203.
+     R1 (bottom): C5 — m even > 2, n odd > 3
+     R2 (middle): C3 — m even > 2, n even > 2
+     R3 (top):    C2 — m even > 2, n = 2
+
+204.
+     R1 (bottom): C5 — m even > 2, n odd > 3
+     R2 (middle): C3 — m even > 2, n even > 2
+     R3 (top):    C3 — m even > 2, n even > 2
+
+205.
+     R1 (bottom): C5 — m even > 2, n odd > 3
+     R2 (middle): C3 — m even > 2, n even > 2
+     R3 (top):    C4 — m even > 2, n = 3
+
+206.
+     R1 (bottom): C5 — m even > 2, n odd > 3
+     R2 (middle): C3 — m even > 2, n even > 2
+     R3 (top):    C5 — m even > 2, n odd > 3
+
+207.
+     R1 (bottom): C5 — m even > 2, n odd > 3
+     R2 (middle): C3 — m even > 2, n even > 2
+     R3 (top):    C6 — m = 3
+
+208.
+     R1 (bottom): C5 — m even > 2, n odd > 3
+     R2 (middle): C3 — m even > 2, n even > 2
+     R3 (top):    C7 — m odd > 3, n = 2
+
+209.
+     R1 (bottom): C5 — m even > 2, n odd > 3
+     R2 (middle): C3 — m even > 2, n even > 2
+     R3 (top):    C8 — m odd > 3, n even > 2
+
+210.
+     R1 (bottom): C5 — m even > 2, n odd > 3
+     R2 (middle): C3 — m even > 2, n even > 2
+     R3 (top):    C9 — m odd > 3, n odd
+
+211.
+     R1 (bottom): C5 — m even > 2, n odd > 3
+     R2 (middle): C4 — m even > 2, n = 3
+     R3 (top):    C1 — m = 2
+
+212.
+     R1 (bottom): C5 — m even > 2, n odd > 3
+     R2 (middle): C4 — m even > 2, n = 3
+     R3 (top):    C2 — m even > 2, n = 2
+
+213.
+     R1 (bottom): C5 — m even > 2, n odd > 3
+     R2 (middle): C4 — m even > 2, n = 3
+     R3 (top):    C3 — m even > 2, n even > 2
+
+214.
+     R1 (bottom): C5 — m even > 2, n odd > 3
+     R2 (middle): C4 — m even > 2, n = 3
+     R3 (top):    C4 — m even > 2, n = 3
+
+215.
+     R1 (bottom): C5 — m even > 2, n odd > 3
+     R2 (middle): C4 — m even > 2, n = 3
+     R3 (top):    C5 — m even > 2, n odd > 3
+
+216.
+     R1 (bottom): C5 — m even > 2, n odd > 3
+     R2 (middle): C4 — m even > 2, n = 3
+     R3 (top):    C6 — m = 3
+
+217.
+     R1 (bottom): C5 — m even > 2, n odd > 3
+     R2 (middle): C4 — m even > 2, n = 3
+     R3 (top):    C7 — m odd > 3, n = 2
+
+218.
+     R1 (bottom): C5 — m even > 2, n odd > 3
+     R2 (middle): C4 — m even > 2, n = 3
+     R3 (top):    C8 — m odd > 3, n even > 2
+
+219.
+     R1 (bottom): C5 — m even > 2, n odd > 3
+     R2 (middle): C4 — m even > 2, n = 3
+     R3 (top):    C9 — m odd > 3, n odd
+
+220.
+     R1 (bottom): C5 — m even > 2, n odd > 3
+     R2 (middle): C5 — m even > 2, n odd > 3
+     R3 (top):    C1 — m = 2
+
+221.
+     R1 (bottom): C5 — m even > 2, n odd > 3
+     R2 (middle): C5 — m even > 2, n odd > 3
+     R3 (top):    C2 — m even > 2, n = 2
+
+222.
+     R1 (bottom): C5 — m even > 2, n odd > 3
+     R2 (middle): C5 — m even > 2, n odd > 3
+     R3 (top):    C3 — m even > 2, n even > 2
+
+223.
+     R1 (bottom): C5 — m even > 2, n odd > 3
+     R2 (middle): C5 — m even > 2, n odd > 3
+     R3 (top):    C4 — m even > 2, n = 3
+
+224.
+     R1 (bottom): C5 — m even > 2, n odd > 3
+     R2 (middle): C5 — m even > 2, n odd > 3
+     R3 (top):    C5 — m even > 2, n odd > 3
+
+225.
+     R1 (bottom): C5 — m even > 2, n odd > 3
+     R2 (middle): C5 — m even > 2, n odd > 3
+     R3 (top):    C6 — m = 3
+
+226.
+     R1 (bottom): C5 — m even > 2, n odd > 3
+     R2 (middle): C5 — m even > 2, n odd > 3
+     R3 (top):    C7 — m odd > 3, n = 2
+
+227.
+     R1 (bottom): C5 — m even > 2, n odd > 3
+     R2 (middle): C5 — m even > 2, n odd > 3
+     R3 (top):    C8 — m odd > 3, n even > 2
+
+228.
+     R1 (bottom): C5 — m even > 2, n odd > 3
+     R2 (middle): C5 — m even > 2, n odd > 3
+     R3 (top):    C9 — m odd > 3, n odd
+
+229.
+     R1 (bottom): C5 — m even > 2, n odd > 3
+     R2 (middle): C6 — m = 3
+     R3 (top):    C1 — m = 2
+
+230.
+     R1 (bottom): C5 — m even > 2, n odd > 3
+     R2 (middle): C7 — m odd > 3, n = 2
+     R3 (top):    C1 — m = 2
+
+231.
+     R1 (bottom): C5 — m even > 2, n odd > 3
+     R2 (middle): C7 — m odd > 3, n = 2
+     R3 (top):    C2 — m even > 2, n = 2
+
+232.
+     R1 (bottom): C5 — m even > 2, n odd > 3
+     R2 (middle): C7 — m odd > 3, n = 2
+     R3 (top):    C3 — m even > 2, n even > 2
+
+233.
+     R1 (bottom): C5 — m even > 2, n odd > 3
+     R2 (middle): C7 — m odd > 3, n = 2
+     R3 (top):    C4 — m even > 2, n = 3
+
+234.
+     R1 (bottom): C5 — m even > 2, n odd > 3
+     R2 (middle): C7 — m odd > 3, n = 2
+     R3 (top):    C5 — m even > 2, n odd > 3
+
+235.
+     R1 (bottom): C5 — m even > 2, n odd > 3
+     R2 (middle): C7 — m odd > 3, n = 2
+     R3 (top):    C6 — m = 3
+
+236.
+     R1 (bottom): C5 — m even > 2, n odd > 3
+     R2 (middle): C7 — m odd > 3, n = 2
+     R3 (top):    C7 — m odd > 3, n = 2
+
+237.
+     R1 (bottom): C5 — m even > 2, n odd > 3
+     R2 (middle): C7 — m odd > 3, n = 2
+     R3 (top):    C8 — m odd > 3, n even > 2
+
+238.
+     R1 (bottom): C5 — m even > 2, n odd > 3
+     R2 (middle): C7 — m odd > 3, n = 2
+     R3 (top):    C9 — m odd > 3, n odd
+
+239.
+     R1 (bottom): C5 — m even > 2, n odd > 3
+     R2 (middle): C8 — m odd > 3, n even > 2
+     R3 (top):    C1 — m = 2
+
+240.
+     R1 (bottom): C5 — m even > 2, n odd > 3
+     R2 (middle): C8 — m odd > 3, n even > 2
+     R3 (top):    C2 — m even > 2, n = 2
+
+241.
+     R1 (bottom): C5 — m even > 2, n odd > 3
+     R2 (middle): C8 — m odd > 3, n even > 2
+     R3 (top):    C3 — m even > 2, n even > 2
+
+242.
+     R1 (bottom): C5 — m even > 2, n odd > 3
+     R2 (middle): C8 — m odd > 3, n even > 2
+     R3 (top):    C4 — m even > 2, n = 3
+
+243.
+     R1 (bottom): C5 — m even > 2, n odd > 3
+     R2 (middle): C8 — m odd > 3, n even > 2
+     R3 (top):    C5 — m even > 2, n odd > 3
+
+244.
+     R1 (bottom): C5 — m even > 2, n odd > 3
+     R2 (middle): C8 — m odd > 3, n even > 2
+     R3 (top):    C6 — m = 3
+
+245.
+     R1 (bottom): C5 — m even > 2, n odd > 3
+     R2 (middle): C8 — m odd > 3, n even > 2
+     R3 (top):    C7 — m odd > 3, n = 2
+
+246.
+     R1 (bottom): C5 — m even > 2, n odd > 3
+     R2 (middle): C8 — m odd > 3, n even > 2
+     R3 (top):    C8 — m odd > 3, n even > 2
+
+247.
+     R1 (bottom): C5 — m even > 2, n odd > 3
+     R2 (middle): C8 — m odd > 3, n even > 2
+     R3 (top):    C9 — m odd > 3, n odd
+
+248.
+     R1 (bottom): C5 — m even > 2, n odd > 3
+     R2 (middle): C9 — m odd > 3, n odd
+     R3 (top):    C1 — m = 2
+
+249.
+     R1 (bottom): C5 — m even > 2, n odd > 3
+     R2 (middle): C9 — m odd > 3, n odd
+     R3 (top):    C2 — m even > 2, n = 2
+
+250.
+     R1 (bottom): C5 — m even > 2, n odd > 3
+     R2 (middle): C9 — m odd > 3, n odd
+     R3 (top):    C3 — m even > 2, n even > 2
+
+251.
+     R1 (bottom): C5 — m even > 2, n odd > 3
+     R2 (middle): C9 — m odd > 3, n odd
+     R3 (top):    C4 — m even > 2, n = 3
+
+252.
+     R1 (bottom): C5 — m even > 2, n odd > 3
+     R2 (middle): C9 — m odd > 3, n odd
+     R3 (top):    C5 — m even > 2, n odd > 3
+
+253.
+     R1 (bottom): C5 — m even > 2, n odd > 3
+     R2 (middle): C9 — m odd > 3, n odd
+     R3 (top):    C6 — m = 3
+
+254.
+     R1 (bottom): C5 — m even > 2, n odd > 3
+     R2 (middle): C9 — m odd > 3, n odd
+     R3 (top):    C7 — m odd > 3, n = 2
+
+255.
+     R1 (bottom): C5 — m even > 2, n odd > 3
+     R2 (middle): C9 — m odd > 3, n odd
+     R3 (top):    C8 — m odd > 3, n even > 2
+
+256.
+     R1 (bottom): C5 — m even > 2, n odd > 3
+     R2 (middle): C9 — m odd > 3, n odd
+     R3 (top):    C9 — m odd > 3, n odd
+
+257.
+     R1 (bottom): C7 — m odd > 3, n = 2
+     R2 (middle): C2 — m even > 2, n = 2
+     R3 (top):    C1 — m = 2
+
+258.
+     R1 (bottom): C7 — m odd > 3, n = 2
+     R2 (middle): C2 — m even > 2, n = 2
+     R3 (top):    C2 — m even > 2, n = 2
+
+259.
+     R1 (bottom): C7 — m odd > 3, n = 2
+     R2 (middle): C2 — m even > 2, n = 2
+     R3 (top):    C3 — m even > 2, n even > 2
+
+260.
+     R1 (bottom): C7 — m odd > 3, n = 2
+     R2 (middle): C2 — m even > 2, n = 2
+     R3 (top):    C4 — m even > 2, n = 3
+
+261.
+     R1 (bottom): C7 — m odd > 3, n = 2
+     R2 (middle): C2 — m even > 2, n = 2
+     R3 (top):    C5 — m even > 2, n odd > 3
+
+262.
+     R1 (bottom): C7 — m odd > 3, n = 2
+     R2 (middle): C2 — m even > 2, n = 2
+     R3 (top):    C6 — m = 3
+
+263.
+     R1 (bottom): C7 — m odd > 3, n = 2
+     R2 (middle): C2 — m even > 2, n = 2
+     R3 (top):    C7 — m odd > 3, n = 2
+
+264.
+     R1 (bottom): C7 — m odd > 3, n = 2
+     R2 (middle): C2 — m even > 2, n = 2
+     R3 (top):    C8 — m odd > 3, n even > 2
+
+265.
+     R1 (bottom): C7 — m odd > 3, n = 2
+     R2 (middle): C2 — m even > 2, n = 2
+     R3 (top):    C9 — m odd > 3, n odd
+
+266.
+     R1 (bottom): C7 — m odd > 3, n = 2
+     R2 (middle): C3 — m even > 2, n even > 2
+     R3 (top):    C1 — m = 2
+
+267.
+     R1 (bottom): C7 — m odd > 3, n = 2
+     R2 (middle): C3 — m even > 2, n even > 2
+     R3 (top):    C2 — m even > 2, n = 2
+
+268.
+     R1 (bottom): C7 — m odd > 3, n = 2
+     R2 (middle): C3 — m even > 2, n even > 2
+     R3 (top):    C3 — m even > 2, n even > 2
+
+269.
+     R1 (bottom): C7 — m odd > 3, n = 2
+     R2 (middle): C3 — m even > 2, n even > 2
+     R3 (top):    C4 — m even > 2, n = 3
+
+270.
+     R1 (bottom): C7 — m odd > 3, n = 2
+     R2 (middle): C3 — m even > 2, n even > 2
+     R3 (top):    C5 — m even > 2, n odd > 3
+
+271.
+     R1 (bottom): C7 — m odd > 3, n = 2
+     R2 (middle): C3 — m even > 2, n even > 2
+     R3 (top):    C6 — m = 3
+
+272.
+     R1 (bottom): C7 — m odd > 3, n = 2
+     R2 (middle): C3 — m even > 2, n even > 2
+     R3 (top):    C7 — m odd > 3, n = 2
+
+273.
+     R1 (bottom): C7 — m odd > 3, n = 2
+     R2 (middle): C3 — m even > 2, n even > 2
+     R3 (top):    C8 — m odd > 3, n even > 2
+
+274.
+     R1 (bottom): C7 — m odd > 3, n = 2
+     R2 (middle): C3 — m even > 2, n even > 2
+     R3 (top):    C9 — m odd > 3, n odd
+
+275.
+     R1 (bottom): C7 — m odd > 3, n = 2
+     R2 (middle): C4 — m even > 2, n = 3
+     R3 (top):    C1 — m = 2
+
+276.
+     R1 (bottom): C7 — m odd > 3, n = 2
+     R2 (middle): C4 — m even > 2, n = 3
+     R3 (top):    C2 — m even > 2, n = 2
+
+277.
+     R1 (bottom): C7 — m odd > 3, n = 2
+     R2 (middle): C4 — m even > 2, n = 3
+     R3 (top):    C3 — m even > 2, n even > 2
+
+278.
+     R1 (bottom): C7 — m odd > 3, n = 2
+     R2 (middle): C4 — m even > 2, n = 3
+     R3 (top):    C4 — m even > 2, n = 3
+
+279.
+     R1 (bottom): C7 — m odd > 3, n = 2
+     R2 (middle): C4 — m even > 2, n = 3
+     R3 (top):    C5 — m even > 2, n odd > 3
+
+280.
+     R1 (bottom): C7 — m odd > 3, n = 2
+     R2 (middle): C4 — m even > 2, n = 3
+     R3 (top):    C6 — m = 3
+
+281.
+     R1 (bottom): C7 — m odd > 3, n = 2
+     R2 (middle): C4 — m even > 2, n = 3
+     R3 (top):    C7 — m odd > 3, n = 2
+
+282.
+     R1 (bottom): C7 — m odd > 3, n = 2
+     R2 (middle): C4 — m even > 2, n = 3
+     R3 (top):    C8 — m odd > 3, n even > 2
+
+283.
+     R1 (bottom): C7 — m odd > 3, n = 2
+     R2 (middle): C4 — m even > 2, n = 3
+     R3 (top):    C9 — m odd > 3, n odd
+
+284.
+     R1 (bottom): C7 — m odd > 3, n = 2
+     R2 (middle): C5 — m even > 2, n odd > 3
+     R3 (top):    C1 — m = 2
+
+285.
+     R1 (bottom): C7 — m odd > 3, n = 2
+     R2 (middle): C5 — m even > 2, n odd > 3
+     R3 (top):    C2 — m even > 2, n = 2
+
+286.
+     R1 (bottom): C7 — m odd > 3, n = 2
+     R2 (middle): C5 — m even > 2, n odd > 3
+     R3 (top):    C3 — m even > 2, n even > 2
+
+287.
+     R1 (bottom): C7 — m odd > 3, n = 2
+     R2 (middle): C5 — m even > 2, n odd > 3
+     R3 (top):    C4 — m even > 2, n = 3
+
+288.
+     R1 (bottom): C7 — m odd > 3, n = 2
+     R2 (middle): C5 — m even > 2, n odd > 3
+     R3 (top):    C5 — m even > 2, n odd > 3
+
+289.
+     R1 (bottom): C7 — m odd > 3, n = 2
+     R2 (middle): C5 — m even > 2, n odd > 3
+     R3 (top):    C6 — m = 3
+
+290.
+     R1 (bottom): C7 — m odd > 3, n = 2
+     R2 (middle): C5 — m even > 2, n odd > 3
+     R3 (top):    C7 — m odd > 3, n = 2
+
+291.
+     R1 (bottom): C7 — m odd > 3, n = 2
+     R2 (middle): C5 — m even > 2, n odd > 3
+     R3 (top):    C8 — m odd > 3, n even > 2
+
+292.
+     R1 (bottom): C7 — m odd > 3, n = 2
+     R2 (middle): C5 — m even > 2, n odd > 3
+     R3 (top):    C9 — m odd > 3, n odd
+
+293.
+     R1 (bottom): C7 — m odd > 3, n = 2
+     R2 (middle): C6 — m = 3
+     R3 (top):    C1 — m = 2
+
+294.
+     R1 (bottom): C7 — m odd > 3, n = 2
+     R2 (middle): C7 — m odd > 3, n = 2
+     R3 (top):    C1 — m = 2
+
+295.
+     R1 (bottom): C7 — m odd > 3, n = 2
+     R2 (middle): C7 — m odd > 3, n = 2
+     R3 (top):    C2 — m even > 2, n = 2
+
+296.
+     R1 (bottom): C7 — m odd > 3, n = 2
+     R2 (middle): C7 — m odd > 3, n = 2
+     R3 (top):    C3 — m even > 2, n even > 2
+
+297.
+     R1 (bottom): C7 — m odd > 3, n = 2
+     R2 (middle): C7 — m odd > 3, n = 2
+     R3 (top):    C4 — m even > 2, n = 3
+
+298.
+     R1 (bottom): C7 — m odd > 3, n = 2
+     R2 (middle): C7 — m odd > 3, n = 2
+     R3 (top):    C5 — m even > 2, n odd > 3
+
+299.
+     R1 (bottom): C7 — m odd > 3, n = 2
+     R2 (middle): C7 — m odd > 3, n = 2
+     R3 (top):    C6 — m = 3
+
+300.
+     R1 (bottom): C7 — m odd > 3, n = 2
+     R2 (middle): C7 — m odd > 3, n = 2
+     R3 (top):    C7 — m odd > 3, n = 2
+
+301.
+     R1 (bottom): C7 — m odd > 3, n = 2
+     R2 (middle): C7 — m odd > 3, n = 2
+     R3 (top):    C8 — m odd > 3, n even > 2
+
+302.
+     R1 (bottom): C7 — m odd > 3, n = 2
+     R2 (middle): C7 — m odd > 3, n = 2
+     R3 (top):    C9 — m odd > 3, n odd
+
+303.
+     R1 (bottom): C7 — m odd > 3, n = 2
+     R2 (middle): C8 — m odd > 3, n even > 2
+     R3 (top):    C1 — m = 2
+
+304.
+     R1 (bottom): C7 — m odd > 3, n = 2
+     R2 (middle): C8 — m odd > 3, n even > 2
+     R3 (top):    C2 — m even > 2, n = 2
+
+305.
+     R1 (bottom): C7 — m odd > 3, n = 2
+     R2 (middle): C8 — m odd > 3, n even > 2
+     R3 (top):    C3 — m even > 2, n even > 2
+
+306.
+     R1 (bottom): C7 — m odd > 3, n = 2
+     R2 (middle): C8 — m odd > 3, n even > 2
+     R3 (top):    C4 — m even > 2, n = 3
+
+307.
+     R1 (bottom): C7 — m odd > 3, n = 2
+     R2 (middle): C8 — m odd > 3, n even > 2
+     R3 (top):    C5 — m even > 2, n odd > 3
+
+308.
+     R1 (bottom): C7 — m odd > 3, n = 2
+     R2 (middle): C8 — m odd > 3, n even > 2
+     R3 (top):    C6 — m = 3
+
+309.
+     R1 (bottom): C7 — m odd > 3, n = 2
+     R2 (middle): C8 — m odd > 3, n even > 2
+     R3 (top):    C7 — m odd > 3, n = 2
+
+310.
+     R1 (bottom): C7 — m odd > 3, n = 2
+     R2 (middle): C8 — m odd > 3, n even > 2
+     R3 (top):    C8 — m odd > 3, n even > 2
+
+311.
+     R1 (bottom): C7 — m odd > 3, n = 2
+     R2 (middle): C8 — m odd > 3, n even > 2
+     R3 (top):    C9 — m odd > 3, n odd
+
+312.
+     R1 (bottom): C7 — m odd > 3, n = 2
+     R2 (middle): C9 — m odd > 3, n odd
+     R3 (top):    C1 — m = 2
+
+313.
+     R1 (bottom): C7 — m odd > 3, n = 2
+     R2 (middle): C9 — m odd > 3, n odd
+     R3 (top):    C2 — m even > 2, n = 2
+
+314.
+     R1 (bottom): C7 — m odd > 3, n = 2
+     R2 (middle): C9 — m odd > 3, n odd
+     R3 (top):    C3 — m even > 2, n even > 2
+
+315.
+     R1 (bottom): C7 — m odd > 3, n = 2
+     R2 (middle): C9 — m odd > 3, n odd
+     R3 (top):    C4 — m even > 2, n = 3
+
+316.
+     R1 (bottom): C7 — m odd > 3, n = 2
+     R2 (middle): C9 — m odd > 3, n odd
+     R3 (top):    C5 — m even > 2, n odd > 3
+
+317.
+     R1 (bottom): C7 — m odd > 3, n = 2
+     R2 (middle): C9 — m odd > 3, n odd
+     R3 (top):    C6 — m = 3
+
+318.
+     R1 (bottom): C7 — m odd > 3, n = 2
+     R2 (middle): C9 — m odd > 3, n odd
+     R3 (top):    C7 — m odd > 3, n = 2
+
+319.
+     R1 (bottom): C7 — m odd > 3, n = 2
+     R2 (middle): C9 — m odd > 3, n odd
+     R3 (top):    C8 — m odd > 3, n even > 2
+
+320.
+     R1 (bottom): C7 — m odd > 3, n = 2
+     R2 (middle): C9 — m odd > 3, n odd
+     R3 (top):    C9 — m odd > 3, n odd
+
+321.
+     R1 (bottom): C8 — m odd > 3, n even > 2
+     R2 (middle): C2 — m even > 2, n = 2
+     R3 (top):    C1 — m = 2
+
+322.
+     R1 (bottom): C8 — m odd > 3, n even > 2
+     R2 (middle): C2 — m even > 2, n = 2
+     R3 (top):    C2 — m even > 2, n = 2
+
+323.
+     R1 (bottom): C8 — m odd > 3, n even > 2
+     R2 (middle): C2 — m even > 2, n = 2
+     R3 (top):    C3 — m even > 2, n even > 2
+
+324.
+     R1 (bottom): C8 — m odd > 3, n even > 2
+     R2 (middle): C2 — m even > 2, n = 2
+     R3 (top):    C4 — m even > 2, n = 3
+
+325.
+     R1 (bottom): C8 — m odd > 3, n even > 2
+     R2 (middle): C2 — m even > 2, n = 2
+     R3 (top):    C5 — m even > 2, n odd > 3
+
+326.
+     R1 (bottom): C8 — m odd > 3, n even > 2
+     R2 (middle): C2 — m even > 2, n = 2
+     R3 (top):    C6 — m = 3
+
+327.
+     R1 (bottom): C8 — m odd > 3, n even > 2
+     R2 (middle): C2 — m even > 2, n = 2
+     R3 (top):    C7 — m odd > 3, n = 2
+
+328.
+     R1 (bottom): C8 — m odd > 3, n even > 2
+     R2 (middle): C2 — m even > 2, n = 2
+     R3 (top):    C8 — m odd > 3, n even > 2
+
+329.
+     R1 (bottom): C8 — m odd > 3, n even > 2
+     R2 (middle): C2 — m even > 2, n = 2
+     R3 (top):    C9 — m odd > 3, n odd
+
+330.
+     R1 (bottom): C8 — m odd > 3, n even > 2
+     R2 (middle): C3 — m even > 2, n even > 2
+     R3 (top):    C1 — m = 2
+
+331.
+     R1 (bottom): C8 — m odd > 3, n even > 2
+     R2 (middle): C3 — m even > 2, n even > 2
+     R3 (top):    C2 — m even > 2, n = 2
+
+332.
+     R1 (bottom): C8 — m odd > 3, n even > 2
+     R2 (middle): C3 — m even > 2, n even > 2
+     R3 (top):    C3 — m even > 2, n even > 2
+
+333.
+     R1 (bottom): C8 — m odd > 3, n even > 2
+     R2 (middle): C3 — m even > 2, n even > 2
+     R3 (top):    C4 — m even > 2, n = 3
+
+334.
+     R1 (bottom): C8 — m odd > 3, n even > 2
+     R2 (middle): C3 — m even > 2, n even > 2
+     R3 (top):    C5 — m even > 2, n odd > 3
+
+335.
+     R1 (bottom): C8 — m odd > 3, n even > 2
+     R2 (middle): C3 — m even > 2, n even > 2
+     R3 (top):    C6 — m = 3
+
+336.
+     R1 (bottom): C8 — m odd > 3, n even > 2
+     R2 (middle): C3 — m even > 2, n even > 2
+     R3 (top):    C7 — m odd > 3, n = 2
+
+337.
+     R1 (bottom): C8 — m odd > 3, n even > 2
+     R2 (middle): C3 — m even > 2, n even > 2
+     R3 (top):    C8 — m odd > 3, n even > 2
+
+338.
+     R1 (bottom): C8 — m odd > 3, n even > 2
+     R2 (middle): C3 — m even > 2, n even > 2
+     R3 (top):    C9 — m odd > 3, n odd
+
+339.
+     R1 (bottom): C8 — m odd > 3, n even > 2
+     R2 (middle): C4 — m even > 2, n = 3
+     R3 (top):    C1 — m = 2
+
+340.
+     R1 (bottom): C8 — m odd > 3, n even > 2
+     R2 (middle): C4 — m even > 2, n = 3
+     R3 (top):    C2 — m even > 2, n = 2
+
+341.
+     R1 (bottom): C8 — m odd > 3, n even > 2
+     R2 (middle): C4 — m even > 2, n = 3
+     R3 (top):    C3 — m even > 2, n even > 2
+
+342.
+     R1 (bottom): C8 — m odd > 3, n even > 2
+     R2 (middle): C4 — m even > 2, n = 3
+     R3 (top):    C4 — m even > 2, n = 3
+
+343.
+     R1 (bottom): C8 — m odd > 3, n even > 2
+     R2 (middle): C4 — m even > 2, n = 3
+     R3 (top):    C5 — m even > 2, n odd > 3
+
+344.
+     R1 (bottom): C8 — m odd > 3, n even > 2
+     R2 (middle): C4 — m even > 2, n = 3
+     R3 (top):    C6 — m = 3
+
+345.
+     R1 (bottom): C8 — m odd > 3, n even > 2
+     R2 (middle): C4 — m even > 2, n = 3
+     R3 (top):    C7 — m odd > 3, n = 2
+
+346.
+     R1 (bottom): C8 — m odd > 3, n even > 2
+     R2 (middle): C4 — m even > 2, n = 3
+     R3 (top):    C8 — m odd > 3, n even > 2
+
+347.
+     R1 (bottom): C8 — m odd > 3, n even > 2
+     R2 (middle): C4 — m even > 2, n = 3
+     R3 (top):    C9 — m odd > 3, n odd
+
+348.
+     R1 (bottom): C8 — m odd > 3, n even > 2
+     R2 (middle): C5 — m even > 2, n odd > 3
+     R3 (top):    C1 — m = 2
+
+349.
+     R1 (bottom): C8 — m odd > 3, n even > 2
+     R2 (middle): C5 — m even > 2, n odd > 3
+     R3 (top):    C2 — m even > 2, n = 2
+
+350.
+     R1 (bottom): C8 — m odd > 3, n even > 2
+     R2 (middle): C5 — m even > 2, n odd > 3
+     R3 (top):    C3 — m even > 2, n even > 2
+
+351.
+     R1 (bottom): C8 — m odd > 3, n even > 2
+     R2 (middle): C5 — m even > 2, n odd > 3
+     R3 (top):    C4 — m even > 2, n = 3
+
+352.
+     R1 (bottom): C8 — m odd > 3, n even > 2
+     R2 (middle): C5 — m even > 2, n odd > 3
+     R3 (top):    C5 — m even > 2, n odd > 3
+
+353.
+     R1 (bottom): C8 — m odd > 3, n even > 2
+     R2 (middle): C5 — m even > 2, n odd > 3
+     R3 (top):    C6 — m = 3
+
+354.
+     R1 (bottom): C8 — m odd > 3, n even > 2
+     R2 (middle): C5 — m even > 2, n odd > 3
+     R3 (top):    C7 — m odd > 3, n = 2
+
+355.
+     R1 (bottom): C8 — m odd > 3, n even > 2
+     R2 (middle): C5 — m even > 2, n odd > 3
+     R3 (top):    C8 — m odd > 3, n even > 2
+
+356.
+     R1 (bottom): C8 — m odd > 3, n even > 2
+     R2 (middle): C5 — m even > 2, n odd > 3
+     R3 (top):    C9 — m odd > 3, n odd
+
+357.
+     R1 (bottom): C8 — m odd > 3, n even > 2
+     R2 (middle): C6 — m = 3
+     R3 (top):    C1 — m = 2
+
+358.
+     R1 (bottom): C8 — m odd > 3, n even > 2
+     R2 (middle): C7 — m odd > 3, n = 2
+     R3 (top):    C1 — m = 2
+
+359.
+     R1 (bottom): C8 — m odd > 3, n even > 2
+     R2 (middle): C7 — m odd > 3, n = 2
+     R3 (top):    C2 — m even > 2, n = 2
+
+360.
+     R1 (bottom): C8 — m odd > 3, n even > 2
+     R2 (middle): C7 — m odd > 3, n = 2
+     R3 (top):    C3 — m even > 2, n even > 2
+
+361.
+     R1 (bottom): C8 — m odd > 3, n even > 2
+     R2 (middle): C7 — m odd > 3, n = 2
+     R3 (top):    C4 — m even > 2, n = 3
+
+362.
+     R1 (bottom): C8 — m odd > 3, n even > 2
+     R2 (middle): C7 — m odd > 3, n = 2
+     R3 (top):    C5 — m even > 2, n odd > 3
+
+363.
+     R1 (bottom): C8 — m odd > 3, n even > 2
+     R2 (middle): C7 — m odd > 3, n = 2
+     R3 (top):    C6 — m = 3
+
+364.
+     R1 (bottom): C8 — m odd > 3, n even > 2
+     R2 (middle): C7 — m odd > 3, n = 2
+     R3 (top):    C7 — m odd > 3, n = 2
+
+365.
+     R1 (bottom): C8 — m odd > 3, n even > 2
+     R2 (middle): C7 — m odd > 3, n = 2
+     R3 (top):    C8 — m odd > 3, n even > 2
+
+366.
+     R1 (bottom): C8 — m odd > 3, n even > 2
+     R2 (middle): C7 — m odd > 3, n = 2
+     R3 (top):    C9 — m odd > 3, n odd
+
+367.
+     R1 (bottom): C8 — m odd > 3, n even > 2
+     R2 (middle): C8 — m odd > 3, n even > 2
+     R3 (top):    C1 — m = 2
+
+368.
+     R1 (bottom): C8 — m odd > 3, n even > 2
+     R2 (middle): C8 — m odd > 3, n even > 2
+     R3 (top):    C2 — m even > 2, n = 2
+
+369.
+     R1 (bottom): C8 — m odd > 3, n even > 2
+     R2 (middle): C8 — m odd > 3, n even > 2
+     R3 (top):    C3 — m even > 2, n even > 2
+
+370.
+     R1 (bottom): C8 — m odd > 3, n even > 2
+     R2 (middle): C8 — m odd > 3, n even > 2
+     R3 (top):    C4 — m even > 2, n = 3
+
+371.
+     R1 (bottom): C8 — m odd > 3, n even > 2
+     R2 (middle): C8 — m odd > 3, n even > 2
+     R3 (top):    C5 — m even > 2, n odd > 3
+
+372.
+     R1 (bottom): C8 — m odd > 3, n even > 2
+     R2 (middle): C8 — m odd > 3, n even > 2
+     R3 (top):    C6 — m = 3
+
+373.
+     R1 (bottom): C8 — m odd > 3, n even > 2
+     R2 (middle): C8 — m odd > 3, n even > 2
+     R3 (top):    C7 — m odd > 3, n = 2
+
+374.
+     R1 (bottom): C8 — m odd > 3, n even > 2
+     R2 (middle): C8 — m odd > 3, n even > 2
+     R3 (top):    C8 — m odd > 3, n even > 2
+
+375.
+     R1 (bottom): C8 — m odd > 3, n even > 2
+     R2 (middle): C8 — m odd > 3, n even > 2
+     R3 (top):    C9 — m odd > 3, n odd
+
+376.
+     R1 (bottom): C8 — m odd > 3, n even > 2
+     R2 (middle): C9 — m odd > 3, n odd
+     R3 (top):    C1 — m = 2
+
+377.
+     R1 (bottom): C8 — m odd > 3, n even > 2
+     R2 (middle): C9 — m odd > 3, n odd
+     R3 (top):    C2 — m even > 2, n = 2
+
+378.
+     R1 (bottom): C8 — m odd > 3, n even > 2
+     R2 (middle): C9 — m odd > 3, n odd
+     R3 (top):    C3 — m even > 2, n even > 2
+
+379.
+     R1 (bottom): C8 — m odd > 3, n even > 2
+     R2 (middle): C9 — m odd > 3, n odd
+     R3 (top):    C4 — m even > 2, n = 3
+
+380.
+     R1 (bottom): C8 — m odd > 3, n even > 2
+     R2 (middle): C9 — m odd > 3, n odd
+     R3 (top):    C5 — m even > 2, n odd > 3
+
+381.
+     R1 (bottom): C8 — m odd > 3, n even > 2
+     R2 (middle): C9 — m odd > 3, n odd
+     R3 (top):    C6 — m = 3
+
+382.
+     R1 (bottom): C8 — m odd > 3, n even > 2
+     R2 (middle): C9 — m odd > 3, n odd
+     R3 (top):    C7 — m odd > 3, n = 2
+
+383.
+     R1 (bottom): C8 — m odd > 3, n even > 2
+     R2 (middle): C9 — m odd > 3, n odd
+     R3 (top):    C8 — m odd > 3, n even > 2
+
+384.
+     R1 (bottom): C8 — m odd > 3, n even > 2
+     R2 (middle): C9 — m odd > 3, n odd
+     R3 (top):    C9 — m odd > 3, n odd
+
+385.
+     R1 (bottom): C9 — m odd > 3, n odd
+     R2 (middle): C2 — m even > 2, n = 2
+     R3 (top):    C1 — m = 2
+
+386.
+     R1 (bottom): C9 — m odd > 3, n odd
+     R2 (middle): C2 — m even > 2, n = 2
+     R3 (top):    C2 — m even > 2, n = 2
+
+387.
+     R1 (bottom): C9 — m odd > 3, n odd
+     R2 (middle): C2 — m even > 2, n = 2
+     R3 (top):    C3 — m even > 2, n even > 2
+
+388.
+     R1 (bottom): C9 — m odd > 3, n odd
+     R2 (middle): C2 — m even > 2, n = 2
+     R3 (top):    C4 — m even > 2, n = 3
+
+389.
+     R1 (bottom): C9 — m odd > 3, n odd
+     R2 (middle): C2 — m even > 2, n = 2
+     R3 (top):    C5 — m even > 2, n odd > 3
+
+390.
+     R1 (bottom): C9 — m odd > 3, n odd
+     R2 (middle): C2 — m even > 2, n = 2
+     R3 (top):    C6 — m = 3
+
+391.
+     R1 (bottom): C9 — m odd > 3, n odd
+     R2 (middle): C2 — m even > 2, n = 2
+     R3 (top):    C7 — m odd > 3, n = 2
+
+392.
+     R1 (bottom): C9 — m odd > 3, n odd
+     R2 (middle): C2 — m even > 2, n = 2
+     R3 (top):    C8 — m odd > 3, n even > 2
+
+393.
+     R1 (bottom): C9 — m odd > 3, n odd
+     R2 (middle): C2 — m even > 2, n = 2
+     R3 (top):    C9 — m odd > 3, n odd
+
+394.
+     R1 (bottom): C9 — m odd > 3, n odd
+     R2 (middle): C3 — m even > 2, n even > 2
+     R3 (top):    C1 — m = 2
+
+395.
+     R1 (bottom): C9 — m odd > 3, n odd
+     R2 (middle): C3 — m even > 2, n even > 2
+     R3 (top):    C2 — m even > 2, n = 2
+
+396.
+     R1 (bottom): C9 — m odd > 3, n odd
+     R2 (middle): C3 — m even > 2, n even > 2
+     R3 (top):    C3 — m even > 2, n even > 2
+
+397.
+     R1 (bottom): C9 — m odd > 3, n odd
+     R2 (middle): C3 — m even > 2, n even > 2
+     R3 (top):    C4 — m even > 2, n = 3
+
+398.
+     R1 (bottom): C9 — m odd > 3, n odd
+     R2 (middle): C3 — m even > 2, n even > 2
+     R3 (top):    C5 — m even > 2, n odd > 3
+
+399.
+     R1 (bottom): C9 — m odd > 3, n odd
+     R2 (middle): C3 — m even > 2, n even > 2
+     R3 (top):    C6 — m = 3
+
+400.
+     R1 (bottom): C9 — m odd > 3, n odd
+     R2 (middle): C3 — m even > 2, n even > 2
+     R3 (top):    C7 — m odd > 3, n = 2
+
+401.
+     R1 (bottom): C9 — m odd > 3, n odd
+     R2 (middle): C3 — m even > 2, n even > 2
+     R3 (top):    C8 — m odd > 3, n even > 2
+
+402.
+     R1 (bottom): C9 — m odd > 3, n odd
+     R2 (middle): C3 — m even > 2, n even > 2
+     R3 (top):    C9 — m odd > 3, n odd
+
+403.
+     R1 (bottom): C9 — m odd > 3, n odd
+     R2 (middle): C4 — m even > 2, n = 3
+     R3 (top):    C1 — m = 2
+
+404.
+     R1 (bottom): C9 — m odd > 3, n odd
+     R2 (middle): C4 — m even > 2, n = 3
+     R3 (top):    C2 — m even > 2, n = 2
+
+405.
+     R1 (bottom): C9 — m odd > 3, n odd
+     R2 (middle): C4 — m even > 2, n = 3
+     R3 (top):    C3 — m even > 2, n even > 2
+
+406.
+     R1 (bottom): C9 — m odd > 3, n odd
+     R2 (middle): C4 — m even > 2, n = 3
+     R3 (top):    C4 — m even > 2, n = 3
+
+407.
+     R1 (bottom): C9 — m odd > 3, n odd
+     R2 (middle): C4 — m even > 2, n = 3
+     R3 (top):    C5 — m even > 2, n odd > 3
+
+408.
+     R1 (bottom): C9 — m odd > 3, n odd
+     R2 (middle): C4 — m even > 2, n = 3
+     R3 (top):    C6 — m = 3
+
+409.
+     R1 (bottom): C9 — m odd > 3, n odd
+     R2 (middle): C4 — m even > 2, n = 3
+     R3 (top):    C7 — m odd > 3, n = 2
+
+410.
+     R1 (bottom): C9 — m odd > 3, n odd
+     R2 (middle): C4 — m even > 2, n = 3
+     R3 (top):    C8 — m odd > 3, n even > 2
+
+411.
+     R1 (bottom): C9 — m odd > 3, n odd
+     R2 (middle): C4 — m even > 2, n = 3
+     R3 (top):    C9 — m odd > 3, n odd
+
+412.
+     R1 (bottom): C9 — m odd > 3, n odd
+     R2 (middle): C5 — m even > 2, n odd > 3
+     R3 (top):    C1 — m = 2
+
+413.
+     R1 (bottom): C9 — m odd > 3, n odd
+     R2 (middle): C5 — m even > 2, n odd > 3
+     R3 (top):    C2 — m even > 2, n = 2
+
+414.
+     R1 (bottom): C9 — m odd > 3, n odd
+     R2 (middle): C5 — m even > 2, n odd > 3
+     R3 (top):    C3 — m even > 2, n even > 2
+
+415.
+     R1 (bottom): C9 — m odd > 3, n odd
+     R2 (middle): C5 — m even > 2, n odd > 3
+     R3 (top):    C4 — m even > 2, n = 3
+
+416.
+     R1 (bottom): C9 — m odd > 3, n odd
+     R2 (middle): C5 — m even > 2, n odd > 3
+     R3 (top):    C5 — m even > 2, n odd > 3
+
+417.
+     R1 (bottom): C9 — m odd > 3, n odd
+     R2 (middle): C5 — m even > 2, n odd > 3
+     R3 (top):    C6 — m = 3
+
+418.
+     R1 (bottom): C9 — m odd > 3, n odd
+     R2 (middle): C5 — m even > 2, n odd > 3
+     R3 (top):    C7 — m odd > 3, n = 2
+
+419.
+     R1 (bottom): C9 — m odd > 3, n odd
+     R2 (middle): C5 — m even > 2, n odd > 3
+     R3 (top):    C8 — m odd > 3, n even > 2
+
+420.
+     R1 (bottom): C9 — m odd > 3, n odd
+     R2 (middle): C5 — m even > 2, n odd > 3
+     R3 (top):    C9 — m odd > 3, n odd
+
+421.
+     R1 (bottom): C9 — m odd > 3, n odd
+     R2 (middle): C6 — m = 3
+     R3 (top):    C1 — m = 2
+
+422.
+     R1 (bottom): C9 — m odd > 3, n odd
+     R2 (middle): C7 — m odd > 3, n = 2
+     R3 (top):    C1 — m = 2
+
+423.
+     R1 (bottom): C9 — m odd > 3, n odd
+     R2 (middle): C7 — m odd > 3, n = 2
+     R3 (top):    C2 — m even > 2, n = 2
+
+424.
+     R1 (bottom): C9 — m odd > 3, n odd
+     R2 (middle): C7 — m odd > 3, n = 2
+     R3 (top):    C3 — m even > 2, n even > 2
+
+425.
+     R1 (bottom): C9 — m odd > 3, n odd
+     R2 (middle): C7 — m odd > 3, n = 2
+     R3 (top):    C4 — m even > 2, n = 3
+
+426.
+     R1 (bottom): C9 — m odd > 3, n odd
+     R2 (middle): C7 — m odd > 3, n = 2
+     R3 (top):    C5 — m even > 2, n odd > 3
+
+427.
+     R1 (bottom): C9 — m odd > 3, n odd
+     R2 (middle): C7 — m odd > 3, n = 2
+     R3 (top):    C6 — m = 3
+
+428.
+     R1 (bottom): C9 — m odd > 3, n odd
+     R2 (middle): C7 — m odd > 3, n = 2
+     R3 (top):    C7 — m odd > 3, n = 2
+
+429.
+     R1 (bottom): C9 — m odd > 3, n odd
+     R2 (middle): C7 — m odd > 3, n = 2
+     R3 (top):    C8 — m odd > 3, n even > 2
+
+430.
+     R1 (bottom): C9 — m odd > 3, n odd
+     R2 (middle): C7 — m odd > 3, n = 2
+     R3 (top):    C9 — m odd > 3, n odd
+
+431.
+     R1 (bottom): C9 — m odd > 3, n odd
+     R2 (middle): C8 — m odd > 3, n even > 2
+     R3 (top):    C1 — m = 2
+
+432.
+     R1 (bottom): C9 — m odd > 3, n odd
+     R2 (middle): C8 — m odd > 3, n even > 2
+     R3 (top):    C2 — m even > 2, n = 2
+
+433.
+     R1 (bottom): C9 — m odd > 3, n odd
+     R2 (middle): C8 — m odd > 3, n even > 2
+     R3 (top):    C3 — m even > 2, n even > 2
+
+434.
+     R1 (bottom): C9 — m odd > 3, n odd
+     R2 (middle): C8 — m odd > 3, n even > 2
+     R3 (top):    C4 — m even > 2, n = 3
+
+435.
+     R1 (bottom): C9 — m odd > 3, n odd
+     R2 (middle): C8 — m odd > 3, n even > 2
+     R3 (top):    C5 — m even > 2, n odd > 3
+
+436.
+     R1 (bottom): C9 — m odd > 3, n odd
+     R2 (middle): C8 — m odd > 3, n even > 2
+     R3 (top):    C6 — m = 3
+
+437.
+     R1 (bottom): C9 — m odd > 3, n odd
+     R2 (middle): C8 — m odd > 3, n even > 2
+     R3 (top):    C7 — m odd > 3, n = 2
+
+438.
+     R1 (bottom): C9 — m odd > 3, n odd
+     R2 (middle): C8 — m odd > 3, n even > 2
+     R3 (top):    C8 — m odd > 3, n even > 2
+
+439.
+     R1 (bottom): C9 — m odd > 3, n odd
+     R2 (middle): C8 — m odd > 3, n even > 2
+     R3 (top):    C9 — m odd > 3, n odd
+
+440.
+     R1 (bottom): C9 — m odd > 3, n odd
+     R2 (middle): C9 — m odd > 3, n odd
+     R3 (top):    C1 — m = 2
+
+441.
+     R1 (bottom): C9 — m odd > 3, n odd
+     R2 (middle): C9 — m odd > 3, n odd
+     R3 (top):    C2 — m even > 2, n = 2
+
+442.
+     R1 (bottom): C9 — m odd > 3, n odd
+     R2 (middle): C9 — m odd > 3, n odd
+     R3 (top):    C3 — m even > 2, n even > 2
+
+443.
+     R1 (bottom): C9 — m odd > 3, n odd
+     R2 (middle): C9 — m odd > 3, n odd
+     R3 (top):    C4 — m even > 2, n = 3
+
+444.
+     R1 (bottom): C9 — m odd > 3, n odd
+     R2 (middle): C9 — m odd > 3, n odd
+     R3 (top):    C5 — m even > 2, n odd > 3
+
+445.
+     R1 (bottom): C9 — m odd > 3, n odd
+     R2 (middle): C9 — m odd > 3, n odd
+     R3 (top):    C6 — m = 3
+
+446.
+     R1 (bottom): C9 — m odd > 3, n odd
+     R2 (middle): C9 — m odd > 3, n odd
+     R3 (top):    C7 — m odd > 3, n = 2
+
+447.
+     R1 (bottom): C9 — m odd > 3, n odd
+     R2 (middle): C9 — m odd > 3, n odd
+     R3 (top):    C8 — m odd > 3, n even > 2
+
+448.
+     R1 (bottom): C9 — m odd > 3, n odd
+     R2 (middle): C9 — m odd > 3, n odd
+     R3 (top):    C9 — m odd > 3, n odd
+
