@@ -1,0 +1,763 @@
+INPUT FILE: /Users/cc/Desktop/hamiltonian/stacking/stacking_examples/R1-C9_R2-C7_R3-C1.txt
+
+Stacking Case (types read from header)
+-------------------------------------
+R1: C9 — m odd > 3, n odd
+R2: C7 — m odd > 3, n = 2
+R3: C1 — m = 2
+
+Example 1
+  R1: m=7, n=5
+  R2: m=5, n=2
+  R3: m=2, n=4
+  #Solutions: 12
+  Solutions (each line: R3[xs->xt], R2[xs->xt], R1[xs->xt])
+      1. R3[0->0], R2[0->0], R1[0->0]
+      2. R3[0->0], R2[0->0], R1[0->2]
+      3. R3[0->0], R2[0->0], R1[0->4]
+      4. R3[0->0], R2[0->0], R1[0->6]
+      5. R3[0->0], R2[0->2], R1[2->0]
+      6. R3[0->0], R2[0->2], R1[2->2]
+      7. R3[0->0], R2[0->2], R1[2->4]
+      8. R3[0->0], R2[0->2], R1[2->6]
+      9. R3[0->0], R2[0->4], R1[4->0]
+     10. R3[0->0], R2[0->4], R1[4->2]
+     11. R3[0->0], R2[0->4], R1[4->4]
+     12. R3[0->0], R2[0->4], R1[4->6]
+
+  First few with global coordinates (up to 10 shown):
+      1. whole: s=(0, 10) -> t=(0, 0)
+         R3: (0, 10) -> (0, 7)   (bridge down from R3_t to R2_s)
+         R2: (0, 6) -> (0, 5)   (bridge down from R2_t to R1_s)
+         R1: (0, 4) -> (0, 0)
+      2. whole: s=(0, 10) -> t=(2, 0)
+         R3: (0, 10) -> (0, 7)   (bridge down from R3_t to R2_s)
+         R2: (0, 6) -> (0, 5)   (bridge down from R2_t to R1_s)
+         R1: (0, 4) -> (2, 0)
+      3. whole: s=(0, 10) -> t=(4, 0)
+         R3: (0, 10) -> (0, 7)   (bridge down from R3_t to R2_s)
+         R2: (0, 6) -> (0, 5)   (bridge down from R2_t to R1_s)
+         R1: (0, 4) -> (4, 0)
+      4. whole: s=(0, 10) -> t=(6, 0)
+         R3: (0, 10) -> (0, 7)   (bridge down from R3_t to R2_s)
+         R2: (0, 6) -> (0, 5)   (bridge down from R2_t to R1_s)
+         R1: (0, 4) -> (6, 0)
+      5. whole: s=(0, 10) -> t=(0, 0)
+         R3: (0, 10) -> (0, 7)   (bridge down from R3_t to R2_s)
+         R2: (0, 6) -> (2, 5)   (bridge down from R2_t to R1_s)
+         R1: (2, 4) -> (0, 0)
+      6. whole: s=(0, 10) -> t=(2, 0)
+         R3: (0, 10) -> (0, 7)   (bridge down from R3_t to R2_s)
+         R2: (0, 6) -> (2, 5)   (bridge down from R2_t to R1_s)
+         R1: (2, 4) -> (2, 0)
+      7. whole: s=(0, 10) -> t=(4, 0)
+         R3: (0, 10) -> (0, 7)   (bridge down from R3_t to R2_s)
+         R2: (0, 6) -> (2, 5)   (bridge down from R2_t to R1_s)
+         R1: (2, 4) -> (4, 0)
+      8. whole: s=(0, 10) -> t=(6, 0)
+         R3: (0, 10) -> (0, 7)   (bridge down from R3_t to R2_s)
+         R2: (0, 6) -> (2, 5)   (bridge down from R2_t to R1_s)
+         R1: (2, 4) -> (6, 0)
+      9. whole: s=(0, 10) -> t=(0, 0)
+         R3: (0, 10) -> (0, 7)   (bridge down from R3_t to R2_s)
+         R2: (0, 6) -> (4, 5)   (bridge down from R2_t to R1_s)
+         R1: (4, 4) -> (0, 0)
+     10. whole: s=(0, 10) -> t=(2, 0)
+         R3: (0, 10) -> (0, 7)   (bridge down from R3_t to R2_s)
+         R2: (0, 6) -> (4, 5)   (bridge down from R2_t to R1_s)
+         R1: (4, 4) -> (2, 0)
+
+------------------------------------------------------------
+
+Example 2
+  R1: m=9, n=5
+  R2: m=5, n=2
+  R3: m=2, n=4
+  #Solutions: 15
+  Solutions (each line: R3[xs->xt], R2[xs->xt], R1[xs->xt])
+      1. R3[0->0], R2[0->0], R1[0->0]
+      2. R3[0->0], R2[0->0], R1[0->2]
+      3. R3[0->0], R2[0->0], R1[0->4]
+      4. R3[0->0], R2[0->0], R1[0->6]
+      5. R3[0->0], R2[0->0], R1[0->8]
+      6. R3[0->0], R2[0->2], R1[2->0]
+      7. R3[0->0], R2[0->2], R1[2->2]
+      8. R3[0->0], R2[0->2], R1[2->4]
+      9. R3[0->0], R2[0->2], R1[2->6]
+     10. R3[0->0], R2[0->2], R1[2->8]
+     11. R3[0->0], R2[0->4], R1[4->0]
+     12. R3[0->0], R2[0->4], R1[4->2]
+     13. R3[0->0], R2[0->4], R1[4->4]
+     14. R3[0->0], R2[0->4], R1[4->6]
+     15. R3[0->0], R2[0->4], R1[4->8]
+
+  First few with global coordinates (up to 10 shown):
+      1. whole: s=(0, 10) -> t=(0, 0)
+         R3: (0, 10) -> (0, 7)   (bridge down from R3_t to R2_s)
+         R2: (0, 6) -> (0, 5)   (bridge down from R2_t to R1_s)
+         R1: (0, 4) -> (0, 0)
+      2. whole: s=(0, 10) -> t=(2, 0)
+         R3: (0, 10) -> (0, 7)   (bridge down from R3_t to R2_s)
+         R2: (0, 6) -> (0, 5)   (bridge down from R2_t to R1_s)
+         R1: (0, 4) -> (2, 0)
+      3. whole: s=(0, 10) -> t=(4, 0)
+         R3: (0, 10) -> (0, 7)   (bridge down from R3_t to R2_s)
+         R2: (0, 6) -> (0, 5)   (bridge down from R2_t to R1_s)
+         R1: (0, 4) -> (4, 0)
+      4. whole: s=(0, 10) -> t=(6, 0)
+         R3: (0, 10) -> (0, 7)   (bridge down from R3_t to R2_s)
+         R2: (0, 6) -> (0, 5)   (bridge down from R2_t to R1_s)
+         R1: (0, 4) -> (6, 0)
+      5. whole: s=(0, 10) -> t=(8, 0)
+         R3: (0, 10) -> (0, 7)   (bridge down from R3_t to R2_s)
+         R2: (0, 6) -> (0, 5)   (bridge down from R2_t to R1_s)
+         R1: (0, 4) -> (8, 0)
+      6. whole: s=(0, 10) -> t=(0, 0)
+         R3: (0, 10) -> (0, 7)   (bridge down from R3_t to R2_s)
+         R2: (0, 6) -> (2, 5)   (bridge down from R2_t to R1_s)
+         R1: (2, 4) -> (0, 0)
+      7. whole: s=(0, 10) -> t=(2, 0)
+         R3: (0, 10) -> (0, 7)   (bridge down from R3_t to R2_s)
+         R2: (0, 6) -> (2, 5)   (bridge down from R2_t to R1_s)
+         R1: (2, 4) -> (2, 0)
+      8. whole: s=(0, 10) -> t=(4, 0)
+         R3: (0, 10) -> (0, 7)   (bridge down from R3_t to R2_s)
+         R2: (0, 6) -> (2, 5)   (bridge down from R2_t to R1_s)
+         R1: (2, 4) -> (4, 0)
+      9. whole: s=(0, 10) -> t=(6, 0)
+         R3: (0, 10) -> (0, 7)   (bridge down from R3_t to R2_s)
+         R2: (0, 6) -> (2, 5)   (bridge down from R2_t to R1_s)
+         R1: (2, 4) -> (6, 0)
+     10. whole: s=(0, 10) -> t=(8, 0)
+         R3: (0, 10) -> (0, 7)   (bridge down from R3_t to R2_s)
+         R2: (0, 6) -> (2, 5)   (bridge down from R2_t to R1_s)
+         R1: (2, 4) -> (8, 0)
+
+------------------------------------------------------------
+
+Example 3
+  R1: m=9, n=5
+  R2: m=7, n=2
+  R3: m=2, n=4
+  #Solutions: 20
+  Solutions (each line: R3[xs->xt], R2[xs->xt], R1[xs->xt])
+      1. R3[0->0], R2[0->0], R1[0->0]
+      2. R3[0->0], R2[0->0], R1[0->2]
+      3. R3[0->0], R2[0->0], R1[0->4]
+      4. R3[0->0], R2[0->0], R1[0->6]
+      5. R3[0->0], R2[0->0], R1[0->8]
+      6. R3[0->0], R2[0->2], R1[2->0]
+      7. R3[0->0], R2[0->2], R1[2->2]
+      8. R3[0->0], R2[0->2], R1[2->4]
+      9. R3[0->0], R2[0->2], R1[2->6]
+     10. R3[0->0], R2[0->2], R1[2->8]
+     11. R3[0->0], R2[0->4], R1[4->0]
+     12. R3[0->0], R2[0->4], R1[4->2]
+     13. R3[0->0], R2[0->4], R1[4->4]
+     14. R3[0->0], R2[0->4], R1[4->6]
+     15. R3[0->0], R2[0->4], R1[4->8]
+     16. R3[0->0], R2[0->6], R1[6->0]
+     17. R3[0->0], R2[0->6], R1[6->2]
+     18. R3[0->0], R2[0->6], R1[6->4]
+     19. R3[0->0], R2[0->6], R1[6->6]
+     20. R3[0->0], R2[0->6], R1[6->8]
+
+  First few with global coordinates (up to 10 shown):
+      1. whole: s=(0, 10) -> t=(0, 0)
+         R3: (0, 10) -> (0, 7)   (bridge down from R3_t to R2_s)
+         R2: (0, 6) -> (0, 5)   (bridge down from R2_t to R1_s)
+         R1: (0, 4) -> (0, 0)
+      2. whole: s=(0, 10) -> t=(2, 0)
+         R3: (0, 10) -> (0, 7)   (bridge down from R3_t to R2_s)
+         R2: (0, 6) -> (0, 5)   (bridge down from R2_t to R1_s)
+         R1: (0, 4) -> (2, 0)
+      3. whole: s=(0, 10) -> t=(4, 0)
+         R3: (0, 10) -> (0, 7)   (bridge down from R3_t to R2_s)
+         R2: (0, 6) -> (0, 5)   (bridge down from R2_t to R1_s)
+         R1: (0, 4) -> (4, 0)
+      4. whole: s=(0, 10) -> t=(6, 0)
+         R3: (0, 10) -> (0, 7)   (bridge down from R3_t to R2_s)
+         R2: (0, 6) -> (0, 5)   (bridge down from R2_t to R1_s)
+         R1: (0, 4) -> (6, 0)
+      5. whole: s=(0, 10) -> t=(8, 0)
+         R3: (0, 10) -> (0, 7)   (bridge down from R3_t to R2_s)
+         R2: (0, 6) -> (0, 5)   (bridge down from R2_t to R1_s)
+         R1: (0, 4) -> (8, 0)
+      6. whole: s=(0, 10) -> t=(0, 0)
+         R3: (0, 10) -> (0, 7)   (bridge down from R3_t to R2_s)
+         R2: (0, 6) -> (2, 5)   (bridge down from R2_t to R1_s)
+         R1: (2, 4) -> (0, 0)
+      7. whole: s=(0, 10) -> t=(2, 0)
+         R3: (0, 10) -> (0, 7)   (bridge down from R3_t to R2_s)
+         R2: (0, 6) -> (2, 5)   (bridge down from R2_t to R1_s)
+         R1: (2, 4) -> (2, 0)
+      8. whole: s=(0, 10) -> t=(4, 0)
+         R3: (0, 10) -> (0, 7)   (bridge down from R3_t to R2_s)
+         R2: (0, 6) -> (2, 5)   (bridge down from R2_t to R1_s)
+         R1: (2, 4) -> (4, 0)
+      9. whole: s=(0, 10) -> t=(6, 0)
+         R3: (0, 10) -> (0, 7)   (bridge down from R3_t to R2_s)
+         R2: (0, 6) -> (2, 5)   (bridge down from R2_t to R1_s)
+         R1: (2, 4) -> (6, 0)
+     10. whole: s=(0, 10) -> t=(8, 0)
+         R3: (0, 10) -> (0, 7)   (bridge down from R3_t to R2_s)
+         R2: (0, 6) -> (2, 5)   (bridge down from R2_t to R1_s)
+         R1: (2, 4) -> (8, 0)
+
+------------------------------------------------------------
+
+Example 4
+  R1: m=11, n=5
+  R2: m=5, n=2
+  R3: m=2, n=4
+  #Solutions: 18
+  Solutions (each line: R3[xs->xt], R2[xs->xt], R1[xs->xt])
+      1. R3[0->0], R2[0->0], R1[0->0]
+      2. R3[0->0], R2[0->0], R1[0->2]
+      3. R3[0->0], R2[0->0], R1[0->4]
+      4. R3[0->0], R2[0->0], R1[0->6]
+      5. R3[0->0], R2[0->0], R1[0->8]
+      6. R3[0->0], R2[0->0], R1[0->10]
+      7. R3[0->0], R2[0->2], R1[2->0]
+      8. R3[0->0], R2[0->2], R1[2->2]
+      9. R3[0->0], R2[0->2], R1[2->4]
+     10. R3[0->0], R2[0->2], R1[2->6]
+     11. R3[0->0], R2[0->2], R1[2->8]
+     12. R3[0->0], R2[0->2], R1[2->10]
+     13. R3[0->0], R2[0->4], R1[4->0]
+     14. R3[0->0], R2[0->4], R1[4->2]
+     15. R3[0->0], R2[0->4], R1[4->4]
+     16. R3[0->0], R2[0->4], R1[4->6]
+     17. R3[0->0], R2[0->4], R1[4->8]
+     18. R3[0->0], R2[0->4], R1[4->10]
+
+  First few with global coordinates (up to 10 shown):
+      1. whole: s=(0, 10) -> t=(0, 0)
+         R3: (0, 10) -> (0, 7)   (bridge down from R3_t to R2_s)
+         R2: (0, 6) -> (0, 5)   (bridge down from R2_t to R1_s)
+         R1: (0, 4) -> (0, 0)
+      2. whole: s=(0, 10) -> t=(2, 0)
+         R3: (0, 10) -> (0, 7)   (bridge down from R3_t to R2_s)
+         R2: (0, 6) -> (0, 5)   (bridge down from R2_t to R1_s)
+         R1: (0, 4) -> (2, 0)
+      3. whole: s=(0, 10) -> t=(4, 0)
+         R3: (0, 10) -> (0, 7)   (bridge down from R3_t to R2_s)
+         R2: (0, 6) -> (0, 5)   (bridge down from R2_t to R1_s)
+         R1: (0, 4) -> (4, 0)
+      4. whole: s=(0, 10) -> t=(6, 0)
+         R3: (0, 10) -> (0, 7)   (bridge down from R3_t to R2_s)
+         R2: (0, 6) -> (0, 5)   (bridge down from R2_t to R1_s)
+         R1: (0, 4) -> (6, 0)
+      5. whole: s=(0, 10) -> t=(8, 0)
+         R3: (0, 10) -> (0, 7)   (bridge down from R3_t to R2_s)
+         R2: (0, 6) -> (0, 5)   (bridge down from R2_t to R1_s)
+         R1: (0, 4) -> (8, 0)
+      6. whole: s=(0, 10) -> t=(10, 0)
+         R3: (0, 10) -> (0, 7)   (bridge down from R3_t to R2_s)
+         R2: (0, 6) -> (0, 5)   (bridge down from R2_t to R1_s)
+         R1: (0, 4) -> (10, 0)
+      7. whole: s=(0, 10) -> t=(0, 0)
+         R3: (0, 10) -> (0, 7)   (bridge down from R3_t to R2_s)
+         R2: (0, 6) -> (2, 5)   (bridge down from R2_t to R1_s)
+         R1: (2, 4) -> (0, 0)
+      8. whole: s=(0, 10) -> t=(2, 0)
+         R3: (0, 10) -> (0, 7)   (bridge down from R3_t to R2_s)
+         R2: (0, 6) -> (2, 5)   (bridge down from R2_t to R1_s)
+         R1: (2, 4) -> (2, 0)
+      9. whole: s=(0, 10) -> t=(4, 0)
+         R3: (0, 10) -> (0, 7)   (bridge down from R3_t to R2_s)
+         R2: (0, 6) -> (2, 5)   (bridge down from R2_t to R1_s)
+         R1: (2, 4) -> (4, 0)
+     10. whole: s=(0, 10) -> t=(6, 0)
+         R3: (0, 10) -> (0, 7)   (bridge down from R3_t to R2_s)
+         R2: (0, 6) -> (2, 5)   (bridge down from R2_t to R1_s)
+         R1: (2, 4) -> (6, 0)
+
+------------------------------------------------------------
+
+Example 5
+  R1: m=11, n=5
+  R2: m=7, n=2
+  R3: m=2, n=4
+  #Solutions: 24
+  Solutions (each line: R3[xs->xt], R2[xs->xt], R1[xs->xt])
+      1. R3[0->0], R2[0->0], R1[0->0]
+      2. R3[0->0], R2[0->0], R1[0->2]
+      3. R3[0->0], R2[0->0], R1[0->4]
+      4. R3[0->0], R2[0->0], R1[0->6]
+      5. R3[0->0], R2[0->0], R1[0->8]
+      6. R3[0->0], R2[0->0], R1[0->10]
+      7. R3[0->0], R2[0->2], R1[2->0]
+      8. R3[0->0], R2[0->2], R1[2->2]
+      9. R3[0->0], R2[0->2], R1[2->4]
+     10. R3[0->0], R2[0->2], R1[2->6]
+     11. R3[0->0], R2[0->2], R1[2->8]
+     12. R3[0->0], R2[0->2], R1[2->10]
+     13. R3[0->0], R2[0->4], R1[4->0]
+     14. R3[0->0], R2[0->4], R1[4->2]
+     15. R3[0->0], R2[0->4], R1[4->4]
+     16. R3[0->0], R2[0->4], R1[4->6]
+     17. R3[0->0], R2[0->4], R1[4->8]
+     18. R3[0->0], R2[0->4], R1[4->10]
+     19. R3[0->0], R2[0->6], R1[6->0]
+     20. R3[0->0], R2[0->6], R1[6->2]
+     21. R3[0->0], R2[0->6], R1[6->4]
+     22. R3[0->0], R2[0->6], R1[6->6]
+     23. R3[0->0], R2[0->6], R1[6->8]
+     24. R3[0->0], R2[0->6], R1[6->10]
+
+  First few with global coordinates (up to 10 shown):
+      1. whole: s=(0, 10) -> t=(0, 0)
+         R3: (0, 10) -> (0, 7)   (bridge down from R3_t to R2_s)
+         R2: (0, 6) -> (0, 5)   (bridge down from R2_t to R1_s)
+         R1: (0, 4) -> (0, 0)
+      2. whole: s=(0, 10) -> t=(2, 0)
+         R3: (0, 10) -> (0, 7)   (bridge down from R3_t to R2_s)
+         R2: (0, 6) -> (0, 5)   (bridge down from R2_t to R1_s)
+         R1: (0, 4) -> (2, 0)
+      3. whole: s=(0, 10) -> t=(4, 0)
+         R3: (0, 10) -> (0, 7)   (bridge down from R3_t to R2_s)
+         R2: (0, 6) -> (0, 5)   (bridge down from R2_t to R1_s)
+         R1: (0, 4) -> (4, 0)
+      4. whole: s=(0, 10) -> t=(6, 0)
+         R3: (0, 10) -> (0, 7)   (bridge down from R3_t to R2_s)
+         R2: (0, 6) -> (0, 5)   (bridge down from R2_t to R1_s)
+         R1: (0, 4) -> (6, 0)
+      5. whole: s=(0, 10) -> t=(8, 0)
+         R3: (0, 10) -> (0, 7)   (bridge down from R3_t to R2_s)
+         R2: (0, 6) -> (0, 5)   (bridge down from R2_t to R1_s)
+         R1: (0, 4) -> (8, 0)
+      6. whole: s=(0, 10) -> t=(10, 0)
+         R3: (0, 10) -> (0, 7)   (bridge down from R3_t to R2_s)
+         R2: (0, 6) -> (0, 5)   (bridge down from R2_t to R1_s)
+         R1: (0, 4) -> (10, 0)
+      7. whole: s=(0, 10) -> t=(0, 0)
+         R3: (0, 10) -> (0, 7)   (bridge down from R3_t to R2_s)
+         R2: (0, 6) -> (2, 5)   (bridge down from R2_t to R1_s)
+         R1: (2, 4) -> (0, 0)
+      8. whole: s=(0, 10) -> t=(2, 0)
+         R3: (0, 10) -> (0, 7)   (bridge down from R3_t to R2_s)
+         R2: (0, 6) -> (2, 5)   (bridge down from R2_t to R1_s)
+         R1: (2, 4) -> (2, 0)
+      9. whole: s=(0, 10) -> t=(4, 0)
+         R3: (0, 10) -> (0, 7)   (bridge down from R3_t to R2_s)
+         R2: (0, 6) -> (2, 5)   (bridge down from R2_t to R1_s)
+         R1: (2, 4) -> (4, 0)
+     10. whole: s=(0, 10) -> t=(6, 0)
+         R3: (0, 10) -> (0, 7)   (bridge down from R3_t to R2_s)
+         R2: (0, 6) -> (2, 5)   (bridge down from R2_t to R1_s)
+         R1: (2, 4) -> (6, 0)
+
+------------------------------------------------------------
+
+Example 6
+  R1: m=11, n=5
+  R2: m=9, n=2
+  R3: m=2, n=4
+  #Solutions: 30
+  Solutions (each line: R3[xs->xt], R2[xs->xt], R1[xs->xt])
+      1. R3[0->0], R2[0->0], R1[0->0]
+      2. R3[0->0], R2[0->0], R1[0->2]
+      3. R3[0->0], R2[0->0], R1[0->4]
+      4. R3[0->0], R2[0->0], R1[0->6]
+      5. R3[0->0], R2[0->0], R1[0->8]
+      6. R3[0->0], R2[0->0], R1[0->10]
+      7. R3[0->0], R2[0->2], R1[2->0]
+      8. R3[0->0], R2[0->2], R1[2->2]
+      9. R3[0->0], R2[0->2], R1[2->4]
+     10. R3[0->0], R2[0->2], R1[2->6]
+     11. R3[0->0], R2[0->2], R1[2->8]
+     12. R3[0->0], R2[0->2], R1[2->10]
+     13. R3[0->0], R2[0->4], R1[4->0]
+     14. R3[0->0], R2[0->4], R1[4->2]
+     15. R3[0->0], R2[0->4], R1[4->4]
+     16. R3[0->0], R2[0->4], R1[4->6]
+     17. R3[0->0], R2[0->4], R1[4->8]
+     18. R3[0->0], R2[0->4], R1[4->10]
+     19. R3[0->0], R2[0->6], R1[6->0]
+     20. R3[0->0], R2[0->6], R1[6->2]
+     21. R3[0->0], R2[0->6], R1[6->4]
+     22. R3[0->0], R2[0->6], R1[6->6]
+     23. R3[0->0], R2[0->6], R1[6->8]
+     24. R3[0->0], R2[0->6], R1[6->10]
+     25. R3[0->0], R2[0->8], R1[8->0]
+     26. R3[0->0], R2[0->8], R1[8->2]
+     27. R3[0->0], R2[0->8], R1[8->4]
+     28. R3[0->0], R2[0->8], R1[8->6]
+     29. R3[0->0], R2[0->8], R1[8->8]
+     30. R3[0->0], R2[0->8], R1[8->10]
+
+  First few with global coordinates (up to 10 shown):
+      1. whole: s=(0, 10) -> t=(0, 0)
+         R3: (0, 10) -> (0, 7)   (bridge down from R3_t to R2_s)
+         R2: (0, 6) -> (0, 5)   (bridge down from R2_t to R1_s)
+         R1: (0, 4) -> (0, 0)
+      2. whole: s=(0, 10) -> t=(2, 0)
+         R3: (0, 10) -> (0, 7)   (bridge down from R3_t to R2_s)
+         R2: (0, 6) -> (0, 5)   (bridge down from R2_t to R1_s)
+         R1: (0, 4) -> (2, 0)
+      3. whole: s=(0, 10) -> t=(4, 0)
+         R3: (0, 10) -> (0, 7)   (bridge down from R3_t to R2_s)
+         R2: (0, 6) -> (0, 5)   (bridge down from R2_t to R1_s)
+         R1: (0, 4) -> (4, 0)
+      4. whole: s=(0, 10) -> t=(6, 0)
+         R3: (0, 10) -> (0, 7)   (bridge down from R3_t to R2_s)
+         R2: (0, 6) -> (0, 5)   (bridge down from R2_t to R1_s)
+         R1: (0, 4) -> (6, 0)
+      5. whole: s=(0, 10) -> t=(8, 0)
+         R3: (0, 10) -> (0, 7)   (bridge down from R3_t to R2_s)
+         R2: (0, 6) -> (0, 5)   (bridge down from R2_t to R1_s)
+         R1: (0, 4) -> (8, 0)
+      6. whole: s=(0, 10) -> t=(10, 0)
+         R3: (0, 10) -> (0, 7)   (bridge down from R3_t to R2_s)
+         R2: (0, 6) -> (0, 5)   (bridge down from R2_t to R1_s)
+         R1: (0, 4) -> (10, 0)
+      7. whole: s=(0, 10) -> t=(0, 0)
+         R3: (0, 10) -> (0, 7)   (bridge down from R3_t to R2_s)
+         R2: (0, 6) -> (2, 5)   (bridge down from R2_t to R1_s)
+         R1: (2, 4) -> (0, 0)
+      8. whole: s=(0, 10) -> t=(2, 0)
+         R3: (0, 10) -> (0, 7)   (bridge down from R3_t to R2_s)
+         R2: (0, 6) -> (2, 5)   (bridge down from R2_t to R1_s)
+         R1: (2, 4) -> (2, 0)
+      9. whole: s=(0, 10) -> t=(4, 0)
+         R3: (0, 10) -> (0, 7)   (bridge down from R3_t to R2_s)
+         R2: (0, 6) -> (2, 5)   (bridge down from R2_t to R1_s)
+         R1: (2, 4) -> (4, 0)
+     10. whole: s=(0, 10) -> t=(6, 0)
+         R3: (0, 10) -> (0, 7)   (bridge down from R3_t to R2_s)
+         R2: (0, 6) -> (2, 5)   (bridge down from R2_t to R1_s)
+         R1: (2, 4) -> (6, 0)
+
+------------------------------------------------------------
+
+Example 7
+  R1: m=13, n=5
+  R2: m=5, n=2
+  R3: m=2, n=4
+  #Solutions: 21
+  Solutions (each line: R3[xs->xt], R2[xs->xt], R1[xs->xt])
+      1. R3[0->0], R2[0->0], R1[0->0]
+      2. R3[0->0], R2[0->0], R1[0->2]
+      3. R3[0->0], R2[0->0], R1[0->4]
+      4. R3[0->0], R2[0->0], R1[0->6]
+      5. R3[0->0], R2[0->0], R1[0->8]
+      6. R3[0->0], R2[0->0], R1[0->10]
+      7. R3[0->0], R2[0->0], R1[0->12]
+      8. R3[0->0], R2[0->2], R1[2->0]
+      9. R3[0->0], R2[0->2], R1[2->2]
+     10. R3[0->0], R2[0->2], R1[2->4]
+     11. R3[0->0], R2[0->2], R1[2->6]
+     12. R3[0->0], R2[0->2], R1[2->8]
+     13. R3[0->0], R2[0->2], R1[2->10]
+     14. R3[0->0], R2[0->2], R1[2->12]
+     15. R3[0->0], R2[0->4], R1[4->0]
+     16. R3[0->0], R2[0->4], R1[4->2]
+     17. R3[0->0], R2[0->4], R1[4->4]
+     18. R3[0->0], R2[0->4], R1[4->6]
+     19. R3[0->0], R2[0->4], R1[4->8]
+     20. R3[0->0], R2[0->4], R1[4->10]
+     21. R3[0->0], R2[0->4], R1[4->12]
+
+  First few with global coordinates (up to 10 shown):
+      1. whole: s=(0, 10) -> t=(0, 0)
+         R3: (0, 10) -> (0, 7)   (bridge down from R3_t to R2_s)
+         R2: (0, 6) -> (0, 5)   (bridge down from R2_t to R1_s)
+         R1: (0, 4) -> (0, 0)
+      2. whole: s=(0, 10) -> t=(2, 0)
+         R3: (0, 10) -> (0, 7)   (bridge down from R3_t to R2_s)
+         R2: (0, 6) -> (0, 5)   (bridge down from R2_t to R1_s)
+         R1: (0, 4) -> (2, 0)
+      3. whole: s=(0, 10) -> t=(4, 0)
+         R3: (0, 10) -> (0, 7)   (bridge down from R3_t to R2_s)
+         R2: (0, 6) -> (0, 5)   (bridge down from R2_t to R1_s)
+         R1: (0, 4) -> (4, 0)
+      4. whole: s=(0, 10) -> t=(6, 0)
+         R3: (0, 10) -> (0, 7)   (bridge down from R3_t to R2_s)
+         R2: (0, 6) -> (0, 5)   (bridge down from R2_t to R1_s)
+         R1: (0, 4) -> (6, 0)
+      5. whole: s=(0, 10) -> t=(8, 0)
+         R3: (0, 10) -> (0, 7)   (bridge down from R3_t to R2_s)
+         R2: (0, 6) -> (0, 5)   (bridge down from R2_t to R1_s)
+         R1: (0, 4) -> (8, 0)
+      6. whole: s=(0, 10) -> t=(10, 0)
+         R3: (0, 10) -> (0, 7)   (bridge down from R3_t to R2_s)
+         R2: (0, 6) -> (0, 5)   (bridge down from R2_t to R1_s)
+         R1: (0, 4) -> (10, 0)
+      7. whole: s=(0, 10) -> t=(12, 0)
+         R3: (0, 10) -> (0, 7)   (bridge down from R3_t to R2_s)
+         R2: (0, 6) -> (0, 5)   (bridge down from R2_t to R1_s)
+         R1: (0, 4) -> (12, 0)
+      8. whole: s=(0, 10) -> t=(0, 0)
+         R3: (0, 10) -> (0, 7)   (bridge down from R3_t to R2_s)
+         R2: (0, 6) -> (2, 5)   (bridge down from R2_t to R1_s)
+         R1: (2, 4) -> (0, 0)
+      9. whole: s=(0, 10) -> t=(2, 0)
+         R3: (0, 10) -> (0, 7)   (bridge down from R3_t to R2_s)
+         R2: (0, 6) -> (2, 5)   (bridge down from R2_t to R1_s)
+         R1: (2, 4) -> (2, 0)
+     10. whole: s=(0, 10) -> t=(4, 0)
+         R3: (0, 10) -> (0, 7)   (bridge down from R3_t to R2_s)
+         R2: (0, 6) -> (2, 5)   (bridge down from R2_t to R1_s)
+         R1: (2, 4) -> (4, 0)
+
+------------------------------------------------------------
+
+Example 8
+  R1: m=13, n=5
+  R2: m=7, n=2
+  R3: m=2, n=4
+  #Solutions: 28
+  Solutions (each line: R3[xs->xt], R2[xs->xt], R1[xs->xt])
+      1. R3[0->0], R2[0->0], R1[0->0]
+      2. R3[0->0], R2[0->0], R1[0->2]
+      3. R3[0->0], R2[0->0], R1[0->4]
+      4. R3[0->0], R2[0->0], R1[0->6]
+      5. R3[0->0], R2[0->0], R1[0->8]
+      6. R3[0->0], R2[0->0], R1[0->10]
+      7. R3[0->0], R2[0->0], R1[0->12]
+      8. R3[0->0], R2[0->2], R1[2->0]
+      9. R3[0->0], R2[0->2], R1[2->2]
+     10. R3[0->0], R2[0->2], R1[2->4]
+     11. R3[0->0], R2[0->2], R1[2->6]
+     12. R3[0->0], R2[0->2], R1[2->8]
+     13. R3[0->0], R2[0->2], R1[2->10]
+     14. R3[0->0], R2[0->2], R1[2->12]
+     15. R3[0->0], R2[0->4], R1[4->0]
+     16. R3[0->0], R2[0->4], R1[4->2]
+     17. R3[0->0], R2[0->4], R1[4->4]
+     18. R3[0->0], R2[0->4], R1[4->6]
+     19. R3[0->0], R2[0->4], R1[4->8]
+     20. R3[0->0], R2[0->4], R1[4->10]
+     21. R3[0->0], R2[0->4], R1[4->12]
+     22. R3[0->0], R2[0->6], R1[6->0]
+     23. R3[0->0], R2[0->6], R1[6->2]
+     24. R3[0->0], R2[0->6], R1[6->4]
+     25. R3[0->0], R2[0->6], R1[6->6]
+     26. R3[0->0], R2[0->6], R1[6->8]
+     27. R3[0->0], R2[0->6], R1[6->10]
+     28. R3[0->0], R2[0->6], R1[6->12]
+
+  First few with global coordinates (up to 10 shown):
+      1. whole: s=(0, 10) -> t=(0, 0)
+         R3: (0, 10) -> (0, 7)   (bridge down from R3_t to R2_s)
+         R2: (0, 6) -> (0, 5)   (bridge down from R2_t to R1_s)
+         R1: (0, 4) -> (0, 0)
+      2. whole: s=(0, 10) -> t=(2, 0)
+         R3: (0, 10) -> (0, 7)   (bridge down from R3_t to R2_s)
+         R2: (0, 6) -> (0, 5)   (bridge down from R2_t to R1_s)
+         R1: (0, 4) -> (2, 0)
+      3. whole: s=(0, 10) -> t=(4, 0)
+         R3: (0, 10) -> (0, 7)   (bridge down from R3_t to R2_s)
+         R2: (0, 6) -> (0, 5)   (bridge down from R2_t to R1_s)
+         R1: (0, 4) -> (4, 0)
+      4. whole: s=(0, 10) -> t=(6, 0)
+         R3: (0, 10) -> (0, 7)   (bridge down from R3_t to R2_s)
+         R2: (0, 6) -> (0, 5)   (bridge down from R2_t to R1_s)
+         R1: (0, 4) -> (6, 0)
+      5. whole: s=(0, 10) -> t=(8, 0)
+         R3: (0, 10) -> (0, 7)   (bridge down from R3_t to R2_s)
+         R2: (0, 6) -> (0, 5)   (bridge down from R2_t to R1_s)
+         R1: (0, 4) -> (8, 0)
+      6. whole: s=(0, 10) -> t=(10, 0)
+         R3: (0, 10) -> (0, 7)   (bridge down from R3_t to R2_s)
+         R2: (0, 6) -> (0, 5)   (bridge down from R2_t to R1_s)
+         R1: (0, 4) -> (10, 0)
+      7. whole: s=(0, 10) -> t=(12, 0)
+         R3: (0, 10) -> (0, 7)   (bridge down from R3_t to R2_s)
+         R2: (0, 6) -> (0, 5)   (bridge down from R2_t to R1_s)
+         R1: (0, 4) -> (12, 0)
+      8. whole: s=(0, 10) -> t=(0, 0)
+         R3: (0, 10) -> (0, 7)   (bridge down from R3_t to R2_s)
+         R2: (0, 6) -> (2, 5)   (bridge down from R2_t to R1_s)
+         R1: (2, 4) -> (0, 0)
+      9. whole: s=(0, 10) -> t=(2, 0)
+         R3: (0, 10) -> (0, 7)   (bridge down from R3_t to R2_s)
+         R2: (0, 6) -> (2, 5)   (bridge down from R2_t to R1_s)
+         R1: (2, 4) -> (2, 0)
+     10. whole: s=(0, 10) -> t=(4, 0)
+         R3: (0, 10) -> (0, 7)   (bridge down from R3_t to R2_s)
+         R2: (0, 6) -> (2, 5)   (bridge down from R2_t to R1_s)
+         R1: (2, 4) -> (4, 0)
+
+------------------------------------------------------------
+
+Example 9
+  R1: m=13, n=5
+  R2: m=9, n=2
+  R3: m=2, n=4
+  #Solutions: 35
+  Solutions (each line: R3[xs->xt], R2[xs->xt], R1[xs->xt])
+      1. R3[0->0], R2[0->0], R1[0->0]
+      2. R3[0->0], R2[0->0], R1[0->2]
+      3. R3[0->0], R2[0->0], R1[0->4]
+      4. R3[0->0], R2[0->0], R1[0->6]
+      5. R3[0->0], R2[0->0], R1[0->8]
+      6. R3[0->0], R2[0->0], R1[0->10]
+      7. R3[0->0], R2[0->0], R1[0->12]
+      8. R3[0->0], R2[0->2], R1[2->0]
+      9. R3[0->0], R2[0->2], R1[2->2]
+     10. R3[0->0], R2[0->2], R1[2->4]
+     11. R3[0->0], R2[0->2], R1[2->6]
+     12. R3[0->0], R2[0->2], R1[2->8]
+     13. R3[0->0], R2[0->2], R1[2->10]
+     14. R3[0->0], R2[0->2], R1[2->12]
+     15. R3[0->0], R2[0->4], R1[4->0]
+     16. R3[0->0], R2[0->4], R1[4->2]
+     17. R3[0->0], R2[0->4], R1[4->4]
+     18. R3[0->0], R2[0->4], R1[4->6]
+     19. R3[0->0], R2[0->4], R1[4->8]
+     20. R3[0->0], R2[0->4], R1[4->10]
+     21. R3[0->0], R2[0->4], R1[4->12]
+     22. R3[0->0], R2[0->6], R1[6->0]
+     23. R3[0->0], R2[0->6], R1[6->2]
+     24. R3[0->0], R2[0->6], R1[6->4]
+     25. R3[0->0], R2[0->6], R1[6->6]
+     26. R3[0->0], R2[0->6], R1[6->8]
+     27. R3[0->0], R2[0->6], R1[6->10]
+     28. R3[0->0], R2[0->6], R1[6->12]
+     29. R3[0->0], R2[0->8], R1[8->0]
+     30. R3[0->0], R2[0->8], R1[8->2]
+     31. R3[0->0], R2[0->8], R1[8->4]
+     32. R3[0->0], R2[0->8], R1[8->6]
+     33. R3[0->0], R2[0->8], R1[8->8]
+     34. R3[0->0], R2[0->8], R1[8->10]
+     35. R3[0->0], R2[0->8], R1[8->12]
+
+  First few with global coordinates (up to 10 shown):
+      1. whole: s=(0, 10) -> t=(0, 0)
+         R3: (0, 10) -> (0, 7)   (bridge down from R3_t to R2_s)
+         R2: (0, 6) -> (0, 5)   (bridge down from R2_t to R1_s)
+         R1: (0, 4) -> (0, 0)
+      2. whole: s=(0, 10) -> t=(2, 0)
+         R3: (0, 10) -> (0, 7)   (bridge down from R3_t to R2_s)
+         R2: (0, 6) -> (0, 5)   (bridge down from R2_t to R1_s)
+         R1: (0, 4) -> (2, 0)
+      3. whole: s=(0, 10) -> t=(4, 0)
+         R3: (0, 10) -> (0, 7)   (bridge down from R3_t to R2_s)
+         R2: (0, 6) -> (0, 5)   (bridge down from R2_t to R1_s)
+         R1: (0, 4) -> (4, 0)
+      4. whole: s=(0, 10) -> t=(6, 0)
+         R3: (0, 10) -> (0, 7)   (bridge down from R3_t to R2_s)
+         R2: (0, 6) -> (0, 5)   (bridge down from R2_t to R1_s)
+         R1: (0, 4) -> (6, 0)
+      5. whole: s=(0, 10) -> t=(8, 0)
+         R3: (0, 10) -> (0, 7)   (bridge down from R3_t to R2_s)
+         R2: (0, 6) -> (0, 5)   (bridge down from R2_t to R1_s)
+         R1: (0, 4) -> (8, 0)
+      6. whole: s=(0, 10) -> t=(10, 0)
+         R3: (0, 10) -> (0, 7)   (bridge down from R3_t to R2_s)
+         R2: (0, 6) -> (0, 5)   (bridge down from R2_t to R1_s)
+         R1: (0, 4) -> (10, 0)
+      7. whole: s=(0, 10) -> t=(12, 0)
+         R3: (0, 10) -> (0, 7)   (bridge down from R3_t to R2_s)
+         R2: (0, 6) -> (0, 5)   (bridge down from R2_t to R1_s)
+         R1: (0, 4) -> (12, 0)
+      8. whole: s=(0, 10) -> t=(0, 0)
+         R3: (0, 10) -> (0, 7)   (bridge down from R3_t to R2_s)
+         R2: (0, 6) -> (2, 5)   (bridge down from R2_t to R1_s)
+         R1: (2, 4) -> (0, 0)
+      9. whole: s=(0, 10) -> t=(2, 0)
+         R3: (0, 10) -> (0, 7)   (bridge down from R3_t to R2_s)
+         R2: (0, 6) -> (2, 5)   (bridge down from R2_t to R1_s)
+         R1: (2, 4) -> (2, 0)
+     10. whole: s=(0, 10) -> t=(4, 0)
+         R3: (0, 10) -> (0, 7)   (bridge down from R3_t to R2_s)
+         R2: (0, 6) -> (2, 5)   (bridge down from R2_t to R1_s)
+         R1: (2, 4) -> (4, 0)
+
+------------------------------------------------------------
+
+Example 10
+  R1: m=13, n=5
+  R2: m=11, n=2
+  R3: m=2, n=4
+  #Solutions: 42
+  Solutions (each line: R3[xs->xt], R2[xs->xt], R1[xs->xt])
+      1. R3[0->0], R2[0->0], R1[0->0]
+      2. R3[0->0], R2[0->0], R1[0->2]
+      3. R3[0->0], R2[0->0], R1[0->4]
+      4. R3[0->0], R2[0->0], R1[0->6]
+      5. R3[0->0], R2[0->0], R1[0->8]
+      6. R3[0->0], R2[0->0], R1[0->10]
+      7. R3[0->0], R2[0->0], R1[0->12]
+      8. R3[0->0], R2[0->2], R1[2->0]
+      9. R3[0->0], R2[0->2], R1[2->2]
+     10. R3[0->0], R2[0->2], R1[2->4]
+     11. R3[0->0], R2[0->2], R1[2->6]
+     12. R3[0->0], R2[0->2], R1[2->8]
+     13. R3[0->0], R2[0->2], R1[2->10]
+     14. R3[0->0], R2[0->2], R1[2->12]
+     15. R3[0->0], R2[0->4], R1[4->0]
+     16. R3[0->0], R2[0->4], R1[4->2]
+     17. R3[0->0], R2[0->4], R1[4->4]
+     18. R3[0->0], R2[0->4], R1[4->6]
+     19. R3[0->0], R2[0->4], R1[4->8]
+     20. R3[0->0], R2[0->4], R1[4->10]
+     21. R3[0->0], R2[0->4], R1[4->12]
+     22. R3[0->0], R2[0->6], R1[6->0]
+     23. R3[0->0], R2[0->6], R1[6->2]
+     24. R3[0->0], R2[0->6], R1[6->4]
+     25. R3[0->0], R2[0->6], R1[6->6]
+     26. R3[0->0], R2[0->6], R1[6->8]
+     27. R3[0->0], R2[0->6], R1[6->10]
+     28. R3[0->0], R2[0->6], R1[6->12]
+     29. R3[0->0], R2[0->8], R1[8->0]
+     30. R3[0->0], R2[0->8], R1[8->2]
+     31. R3[0->0], R2[0->8], R1[8->4]
+     32. R3[0->0], R2[0->8], R1[8->6]
+     33. R3[0->0], R2[0->8], R1[8->8]
+     34. R3[0->0], R2[0->8], R1[8->10]
+     35. R3[0->0], R2[0->8], R1[8->12]
+     36. R3[0->0], R2[0->10], R1[10->0]
+     37. R3[0->0], R2[0->10], R1[10->2]
+     38. R3[0->0], R2[0->10], R1[10->4]
+     39. R3[0->0], R2[0->10], R1[10->6]
+     40. R3[0->0], R2[0->10], R1[10->8]
+     41. R3[0->0], R2[0->10], R1[10->10]
+     42. R3[0->0], R2[0->10], R1[10->12]
+
+  First few with global coordinates (up to 10 shown):
+      1. whole: s=(0, 10) -> t=(0, 0)
+         R3: (0, 10) -> (0, 7)   (bridge down from R3_t to R2_s)
+         R2: (0, 6) -> (0, 5)   (bridge down from R2_t to R1_s)
+         R1: (0, 4) -> (0, 0)
+      2. whole: s=(0, 10) -> t=(2, 0)
+         R3: (0, 10) -> (0, 7)   (bridge down from R3_t to R2_s)
+         R2: (0, 6) -> (0, 5)   (bridge down from R2_t to R1_s)
+         R1: (0, 4) -> (2, 0)
+      3. whole: s=(0, 10) -> t=(4, 0)
+         R3: (0, 10) -> (0, 7)   (bridge down from R3_t to R2_s)
+         R2: (0, 6) -> (0, 5)   (bridge down from R2_t to R1_s)
+         R1: (0, 4) -> (4, 0)
+      4. whole: s=(0, 10) -> t=(6, 0)
+         R3: (0, 10) -> (0, 7)   (bridge down from R3_t to R2_s)
+         R2: (0, 6) -> (0, 5)   (bridge down from R2_t to R1_s)
+         R1: (0, 4) -> (6, 0)
+      5. whole: s=(0, 10) -> t=(8, 0)
+         R3: (0, 10) -> (0, 7)   (bridge down from R3_t to R2_s)
+         R2: (0, 6) -> (0, 5)   (bridge down from R2_t to R1_s)
+         R1: (0, 4) -> (8, 0)
+      6. whole: s=(0, 10) -> t=(10, 0)
+         R3: (0, 10) -> (0, 7)   (bridge down from R3_t to R2_s)
+         R2: (0, 6) -> (0, 5)   (bridge down from R2_t to R1_s)
+         R1: (0, 4) -> (10, 0)
+      7. whole: s=(0, 10) -> t=(12, 0)
+         R3: (0, 10) -> (0, 7)   (bridge down from R3_t to R2_s)
+         R2: (0, 6) -> (0, 5)   (bridge down from R2_t to R1_s)
+         R1: (0, 4) -> (12, 0)
+      8. whole: s=(0, 10) -> t=(0, 0)
+         R3: (0, 10) -> (0, 7)   (bridge down from R3_t to R2_s)
+         R2: (0, 6) -> (2, 5)   (bridge down from R2_t to R1_s)
+         R1: (2, 4) -> (0, 0)
+      9. whole: s=(0, 10) -> t=(2, 0)
+         R3: (0, 10) -> (0, 7)   (bridge down from R3_t to R2_s)
+         R2: (0, 6) -> (2, 5)   (bridge down from R2_t to R1_s)
+         R1: (2, 4) -> (2, 0)
+     10. whole: s=(0, 10) -> t=(4, 0)
+         R3: (0, 10) -> (0, 7)   (bridge down from R3_t to R2_s)
+         R2: (0, 6) -> (2, 5)   (bridge down from R2_t to R1_s)
+         R1: (2, 4) -> (4, 0)
+
+------------------------------------------------------------
+

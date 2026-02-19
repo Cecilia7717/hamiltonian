@@ -48,15 +48,15 @@ from typing import Dict, List, Tuple
 # Paths (you can edit if needed)
 # ----------------------------
 STACKING_DIR = Path("/Users/cc/Desktop/hamiltonian/stacking")
-INPUT_DIR = STACKING_DIR / "stacking_examples"
-OUTPUT_DIR = STACKING_DIR / "stacking_solution"
+INPUT_DIR = STACKING_DIR / "stacking_examples_4"
+OUTPUT_DIR = STACKING_DIR / "stacking_solution_4"
 
 # ----------------------------
 # Parsing
 # ----------------------------
-TYPE_RE = re.compile(r"^(R[123])\s+\((bottom|middle|top)\):\s+(C\d+)\s+—\s+(.+)$")
 EXAMPLE_RE = re.compile(r"^Example\s+(\d+)\s*$")
-RECT_RE = re.compile(r"^\s*(R[123])\s*:\s*m\s*=\s*(\d+)\s*,\s*n\s*=\s*(\d+)\s*$")
+TYPE_RE = re.compile(r"^(R\d+)\s+\((bottom|middle|top)\):\s+(C\d+)\s+—\s+(.+)$")
+RECT_RE = re.compile(r"^\s*(R\d+)\s*:\s*m\s*=\s*(\d+)\s*,\s*n\s*=\s*(\d+)\s*$")
 
 
 def parse_case_file(path: Path):
@@ -100,7 +100,10 @@ def parse_case_file(path: Path):
         examples.append(cur)
 
     # keep only complete examples
-    examples = [ex for ex in examples if all(k in ex for k in ("R1", "R2", "R3"))]
+    if examples:
+        required_keys = set(examples[0].keys())
+        examples = [ex for ex in examples if set(ex.keys()) == required_keys]
+
     return types, examples
 
 
@@ -202,79 +205,84 @@ def endpoint_map_top_to_bottom(m: int, n: int) -> Dict[int, List[int]]:
             mp[x1] = ends
     return mp
 
-
-# ----------------------------
-# Solve one example
-# ----------------------------
-def solve_one_example(m1, n1, m2, n2, m3, n3):
+def solve_one_example(rectangles):
     """
+    rectangles: ordered list bottom -> top
+                [(m1,n1), (m2,n2), ..., (mk,nk)]
+
     Returns list of solution chains.
-    Each chain is a dict with:
-      s3,t3,s2,t2,s1,t1 as GLOBAL coordinates (x,y)
-      plus x-only summary.
     """
-    # Global y offsets
-    y1_off = 0
-    y2_off = n1
-    y3_off = n1 + n2
 
-    # Start (top boundary) y values
-    y1_start = y1_off + (n1 - 1)
-    y2_start = y2_off + (n2 - 1)
-    y3_start = y3_off + (n3 - 1)
+    k = len(rectangles)
 
-    # End (bottom boundary) y values
-    y1_end = y1_off + 0
-    y2_end = y2_off + 0
-    y3_end = y3_off + 0
+    # Compute global y offsets
+    y_offsets = []
+    acc = 0
+    for (m, n) in rectangles:
+        y_offsets.append(acc)
+        acc += n
 
-    # Maps: start_x -> end_xs
-    M1 = endpoint_map_top_to_bottom(m1, n1)
-    M2 = endpoint_map_top_to_bottom(m2, n2)
-    M3 = endpoint_map_top_to_bottom(m3, n3)
+    # Precompute endpoint maps
+    maps = []
+    for (m, n) in rectangles:
+        maps.append(endpoint_map_top_to_bottom(m, n))
 
     solutions = []
 
-    # R3 choices
-    for x_s3, ends3 in M3.items():
-        for x_t3 in ends3:
-            # adjacency down into R2:
-            # t3 at (x_t3, y3_end) has below neighbor at (x_t3, y3_end - 1)
-            # which is exactly the TOP boundary of R2 at y2_start
-            # so we must have s2.x = x_t3
-            x_s2 = x_t3
-            if x_s2 not in M2:
-                continue
+    # Recursive propagation from TOP down
+    def backtrack(level, chain):
 
-            # R2 choices
-            for x_t2 in M2[x_s2]:
-                # adjacency down into R1:
-                x_s1 = x_t2
-                if x_s1 not in M1:
-                    continue
+        # level counts from top index down to 0
+        if level < 0:
+            solutions.append(chain.copy())
+            return
 
-                # R1 choices
-                for x_t1 in M1[x_s1]:
-                    sol = {
-                        "x": {
-                            "R3": (x_s3, x_t3),
-                            "R2": (x_s2, x_t2),
-                            "R1": (x_s1, x_t1),
-                        },
-                        "global": {
-                            "R3_s": (x_s3, y3_start),
-                            "R3_t": (x_t3, y3_end),
-                            "R2_s": (x_s2, y2_start),
-                            "R2_t": (x_t2, y2_end),
-                            "R1_s": (x_s1, y1_start),
-                            "R1_t": (x_t1, y1_end),
-                            "whole_s": (x_s3, y3_start),
-                            "whole_t": (x_t1, y1_end),
-                        }
-                    }
-                    solutions.append(sol)
+        m, n = rectangles[level]
+        mp = maps[level]
 
-    return solutions
+        if level == k - 1:
+            # top rectangle: choose any start
+            for x_s, ends in mp.items():
+                for x_t in ends:
+                    chain[level] = (x_s, x_t)
+                    backtrack(level - 1, chain)
+        else:
+            # must match previous level's t
+            x_s = chain[level + 1][1]
+            if x_s not in mp:
+                return
+
+            for x_t in mp[x_s]:
+                chain[level] = (x_s, x_t)
+                backtrack(level - 1, chain)
+
+    backtrack(k - 1, {})
+
+    # Convert to global coordinate format
+    formatted = []
+
+    for sol in solutions:
+        global_sol = {"x": {}, "global": {}}
+
+        for i in range(k):
+            m, n = rectangles[i]
+            x_s, x_t = sol[i]
+
+            y_off = y_offsets[i]
+            y_start = y_off + (n - 1)
+            y_end = y_off
+
+            global_sol["x"][f"R{i+1}"] = (x_s, x_t)
+            global_sol["global"][f"R{i+1}_s"] = (x_s, y_start)
+            global_sol["global"][f"R{i+1}_t"] = (x_t, y_end)
+
+        # whole stack endpoints
+        global_sol["global"]["whole_s"] = global_sol["global"][f"R{k}_s"]
+        global_sol["global"]["whole_t"] = global_sol["global"][f"R1_t"]
+
+        formatted.append(global_sol)
+
+    return formatted
 
 
 # ----------------------------
@@ -295,61 +303,61 @@ def write_solutions(out_path: Path, in_path: Path, types, examples, only_first_f
             else:
                 f.write(f"{r}: (missing type header)\n")
         f.write("\n")
-
+        failed_examples = []
         for idx, ex in enumerate(examples, 1):
-            (m1, n1) = ex["R1"]
-            (m2, n2) = ex["R2"]
-            (m3, n3) = ex["R3"]
+            rectangles = [ex[key] for key in sorted(ex.keys(), key=lambda x: int(x[1:]))]
+            sols = solve_one_example(rectangles)
+            if len(sols) == 0:
+                failed_examples.append(idx)
 
-            f.write(f"Example {idx}\n")
-            f.write(f"  R1: m={m1}, n={n1}\n")
-            f.write(f"  R2: m={m2}, n={n2}\n")
-            f.write(f"  R3: m={m3}, n={n3}\n")
-
-            sols = solve_one_example(m1, n1, m2, n2, m3, n3)
             f.write(f"  #Solutions: {len(sols)}\n")
+            if failed_examples:
+                f.write("\n")
+                f.write("============================================================\n")
+                f.write("  EXAMPLES WITH NO VALID STACKING CHAINS:\n")
+                for ex_id in failed_examples:
+                    f.write(f"    - Example {ex_id}\n")
+                f.write("============================================================\n")
 
             if sols:
                 f.write("  Solutions (each line: R3[xs->xt], R2[xs->xt], R1[xs->xt])\n")
                 for j, sol in enumerate(sols, 1):
-                    xR3 = sol["x"]["R3"]
-                    xR2 = sol["x"]["R2"]
-                    xR1 = sol["x"]["R1"]
-                    f.write(f"    {j:3d}. R3[{xR3[0]}->{xR3[1]}], R2[{xR2[0]}->{xR2[1]}], R1[{xR1[0]}->{xR1[1]}]\n")
+                    for j, sol in enumerate(sols, 1):
+                        f.write(f"    {j:3d}. ")
+                        for i in range(len(rectangles), 0, -1):
+                            xs, xt = sol["x"][f"R{i}"]
+                            f.write(f"R{i}[{xs}->{xt}] ")
+                        f.write("\n")
+
 
                 f.write("\n  First few with global coordinates (up to 10 shown):\n")
                 for j, sol in enumerate(sols[:10], 1):
                     g = sol["global"]
                     f.write(f"    {j:3d}. whole: s={g['whole_s']} -> t={g['whole_t']}\n")
-                    f.write(f"         R3: {g['R3_s']} -> {g['R3_t']}   (bridge down from R3_t to R2_s)\n")
-                    f.write(f"         R2: {g['R2_s']} -> {g['R2_t']}   (bridge down from R2_t to R1_s)\n")
-                    f.write(f"         R1: {g['R1_s']} -> {g['R1_t']}\n")
+                    for i in range(len(rectangles), 0, -1):
+                        f.write(f"         R{i}: {g[f'R{i}_s']} -> {g[f'R{i}_t']}\n")
+
             f.write("\n" + ("-" * 60) + "\n\n")
 
 
-def pick_one_input_file(argv: List[str]) -> Path:
-    if len(argv) >= 2:
-        p = Path(argv[1])
-        if not p.exists():
-            raise FileNotFoundError(f"File not found: {p}")
-        return p
+def main():
+    OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
-    # default: first .txt alphabetically
     txts = sorted(INPUT_DIR.glob("*.txt"))
     if not txts:
         raise FileNotFoundError(f"No .txt files found under {INPUT_DIR}")
-    return txts[98]
 
+    for in_file in txts:
+        print(f"Processing: {in_file.name}")
 
-def main():
-    in_file = pick_one_input_file(sys.argv)
-    types, examples = parse_case_file(in_file)
+        types, examples = parse_case_file(in_file)
+        out_file = OUTPUT_DIR / in_file.name
 
-    out_file = OUTPUT_DIR / in_file.name  # same name, different folder
-    write_solutions(out_file, in_file, types, examples)
+        write_solutions(out_file, in_file, types, examples)
 
-    print(f"Done. Wrote: {out_file}")
+        print(f"  -> Wrote: {out_file}")
 
+    print("\nAll files processed.")
 
 if __name__ == "__main__":
     main()

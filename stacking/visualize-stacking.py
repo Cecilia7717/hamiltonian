@@ -31,8 +31,8 @@ from matplotlib.backends.backend_pdf import PdfPages
 # ----------------------------
 # Config
 # ----------------------------
-INPUT_DIR = Path("stacking_examples")
-OUTPUT_DIR = Path("stacking_examples_visual")
+INPUT_DIR = Path("stacking_examples_reverse")
+OUTPUT_DIR = Path("stacking_examples_visual_reverse")
 MAX_EXAMPLES_PER_CASE = 10  # expected 10, but we handle fewer safely
 
 

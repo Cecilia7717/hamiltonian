@@ -1,0 +1,183 @@
+INPUT FILE: /Users/cc/Desktop/hamiltonian/stacking/stacking_examples_reverse/R1-C9_R2-C4_R3-C9.txt
+
+Stacking Case (types read from header)
+-------------------------------------
+R1: C9 — m odd > 3, n odd
+R2: C4 — m even > 2, n = 3
+R3: C9 — m odd > 3, n odd
+
+Example 1
+  R1: m=5, n=5
+  R2: m=6, n=3
+  R3: m=7, n=5
+  #Solutions: 0
+
+============================================================
+  EXAMPLES WITH NO VALID STACKING CHAINS:
+    - Example 1
+============================================================
+
+------------------------------------------------------------
+
+Example 2
+  R1: m=5, n=5
+  R2: m=6, n=3
+  R3: m=9, n=5
+  #Solutions: 0
+
+============================================================
+  EXAMPLES WITH NO VALID STACKING CHAINS:
+    - Example 1
+    - Example 2
+============================================================
+
+------------------------------------------------------------
+
+Example 3
+  R1: m=5, n=5
+  R2: m=8, n=3
+  R3: m=9, n=5
+  #Solutions: 0
+
+============================================================
+  EXAMPLES WITH NO VALID STACKING CHAINS:
+    - Example 1
+    - Example 2
+    - Example 3
+============================================================
+
+------------------------------------------------------------
+
+Example 4
+  R1: m=7, n=5
+  R2: m=8, n=3
+  R3: m=9, n=5
+  #Solutions: 0
+
+============================================================
+  EXAMPLES WITH NO VALID STACKING CHAINS:
+    - Example 1
+    - Example 2
+    - Example 3
+    - Example 4
+============================================================
+
+------------------------------------------------------------
+
+Example 5
+  R1: m=5, n=5
+  R2: m=6, n=3
+  R3: m=11, n=5
+  #Solutions: 0
+
+============================================================
+  EXAMPLES WITH NO VALID STACKING CHAINS:
+    - Example 1
+    - Example 2
+    - Example 3
+    - Example 4
+    - Example 5
+============================================================
+
+------------------------------------------------------------
+
+Example 6
+  R1: m=5, n=5
+  R2: m=8, n=3
+  R3: m=11, n=5
+  #Solutions: 0
+
+============================================================
+  EXAMPLES WITH NO VALID STACKING CHAINS:
+    - Example 1
+    - Example 2
+    - Example 3
+    - Example 4
+    - Example 5
+    - Example 6
+============================================================
+
+------------------------------------------------------------
+
+Example 7
+  R1: m=7, n=5
+  R2: m=8, n=3
+  R3: m=11, n=5
+  #Solutions: 0
+
+============================================================
+  EXAMPLES WITH NO VALID STACKING CHAINS:
+    - Example 1
+    - Example 2
+    - Example 3
+    - Example 4
+    - Example 5
+    - Example 6
+    - Example 7
+============================================================
+
+------------------------------------------------------------
+
+Example 8
+  R1: m=5, n=5
+  R2: m=10, n=3
+  R3: m=11, n=5
+  #Solutions: 0
+
+============================================================
+  EXAMPLES WITH NO VALID STACKING CHAINS:
+    - Example 1
+    - Example 2
+    - Example 3
+    - Example 4
+    - Example 5
+    - Example 6
+    - Example 7
+    - Example 8
+============================================================
+
+------------------------------------------------------------
+
+Example 9
+  R1: m=7, n=5
+  R2: m=10, n=3
+  R3: m=11, n=5
+  #Solutions: 0
+
+============================================================
+  EXAMPLES WITH NO VALID STACKING CHAINS:
+    - Example 1
+    - Example 2
+    - Example 3
+    - Example 4
+    - Example 5
+    - Example 6
+    - Example 7
+    - Example 8
+    - Example 9
+============================================================
+
+------------------------------------------------------------
+
+Example 10
+  R1: m=9, n=5
+  R2: m=10, n=3
+  R3: m=11, n=5
+  #Solutions: 0
+
+============================================================
+  EXAMPLES WITH NO VALID STACKING CHAINS:
+    - Example 1
+    - Example 2
+    - Example 3
+    - Example 4
+    - Example 5
+    - Example 6
+    - Example 7
+    - Example 8
+    - Example 9
+    - Example 10
+============================================================
+
+------------------------------------------------------------
+

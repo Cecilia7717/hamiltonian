@@ -7,7 +7,7 @@ from itertools import product
 
 MAX_M = 15
 NUM_EXAMPLES = 10
-OUTPUT_DIR = "stacking_examples"
+OUTPUT_DIR = "stacking_examples_reverse"
 
 # ==================================================
 # Case definitions
@@ -100,9 +100,9 @@ def generate_examples_for_case(R1, R2, R3, count=NUM_EXAMPLES):
                 n3 = sample_n(CASES[R3]["n"])
 
                 examples.append({
-                    "R1": (m1, n1),
+                    "R1": (m3, n3),
                     "R2": (m2, n2),
-                    "R3": (m3, n3),
+                    "R3": (m1, n1),
                 })
 
                 if len(examples) == count:
@@ -131,9 +131,9 @@ def write_all_cases(output_dir=OUTPUT_DIR):
         with open(path, "w") as f:
             f.write("Stacking Case\n")
             f.write("-----------------------------\n")
-            f.write(f"R1 (bottom): {R1} — {CASES[R1]['desc']}\n")
+            f.write(f"R1 (bottom): {R1} — {CASES[R3]['desc']}\n")
             f.write(f"R2 (middle): {R2} — {CASES[R2]['desc']}\n")
-            f.write(f"R3 (top):    {R3} — {CASES[R3]['desc']}\n\n")
+            f.write(f"R3 (top):    {R3} — {CASES[R1]['desc']}\n\n")
 
             for i, ex in enumerate(examples, 1):
                 f.write(f"Example {i}\n")

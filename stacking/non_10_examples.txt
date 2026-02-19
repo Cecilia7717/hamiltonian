@@ -1,0 +1,47 @@
+R1-C2_R2-C6_R3-C1.txt  ->  6 examples
+R1-C3_R2-C6_R3-C1.txt  ->  6 examples
+R1-C4_R2-C6_R3-C1.txt  ->  6 examples
+R1-C5_R2-C6_R3-C1.txt  ->  6 examples
+R1-C7_R2-C6_R3-C1.txt  ->  6 examples
+R1-C8_R2-C6_R3-C1.txt  ->  6 examples
+R1-C9_R2-C6_R3-C1.txt  ->  6 examples
+
+no solution:
+R1-C9_R2-C4_R3-C6.txt
+R1-C9_R2-C4_R3-C9.txt
+R1-C9_R2-C5_R3-C6.txt
+R1-C9_R2-C5_R3-C9.txt
+
+need to find the solution file that doesn't have 10 examples
+R1-C2_R2-C6_R3-C1.txt  ->  6 examples
+R1-C3_R2-C6_R3-C1.txt  ->  6 examples
+R1-C4_R2-C6_R3-C1.txt  ->  6 examples
+R1-C5_R2-C6_R3-C1.txt  ->  6 examples
+R1-C7_R2-C6_R3-C1.txt  ->  6 examples
+R1-C8_R2-C6_R3-C1.txt  ->  6 examples
+R1-C9_R2-C6_R3-C1.txt  ->  6 examples
+
+
+reverse:
+R1-C2_R2-C6_R3-C1.txt  ->  6 examples
+R1-C3_R2-C6_R3-C1.txt  ->  6 examples
+R1-C4_R2-C6_R3-C1.txt  ->  6 examples
+R1-C5_R2-C6_R3-C1.txt  ->  6 examples
+R1-C7_R2-C6_R3-C1.txt  ->  6 examples
+R1-C8_R2-C6_R3-C1.txt  ->  6 examples
+R1-C9_R2-C6_R3-C1.txt  ->  6 examples
+
+no solution:
+R1-C9_R2-C4_R3-C6.txt
+R1-C9_R2-C4_R3-C9.txt
+R1-C9_R2-C5_R3-C6.txt
+R1-C9_R2-C5_R3-C9.txt
+
+the solution file that doesn't have 10 examples
+R1-C2_R2-C6_R3-C1.txt  ->  6 examples
+R1-C3_R2-C6_R3-C1.txt  ->  6 examples
+R1-C4_R2-C6_R3-C1.txt  ->  6 examples
+R1-C5_R2-C6_R3-C1.txt  ->  6 examples
+R1-C7_R2-C6_R3-C1.txt  ->  6 examples
+R1-C8_R2-C6_R3-C1.txt  ->  6 examples
+R1-C9_R2-C6_R3-C1.txt  ->  6 examples

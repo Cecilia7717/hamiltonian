@@ -1,0 +1,56 @@
+Stacking Case
+-----------------------------
+R1 (bottom): C4 — m = 3
+R2 (middle): C5 — m even > 2, n odd > 3
+R3 (top):    C6 — m even > 2, n = 3
+
+Example 1
+  R1: m=3, n=4
+  R2: m=4, n=5
+  R3: m=6, n=3
+
+Example 2
+  R1: m=3, n=4
+  R2: m=4, n=5
+  R3: m=8, n=3
+
+Example 3
+  R1: m=3, n=4
+  R2: m=6, n=5
+  R3: m=8, n=3
+
+Example 4
+  R1: m=3, n=4
+  R2: m=4, n=5
+  R3: m=10, n=3
+
+Example 5
+  R1: m=3, n=4
+  R2: m=6, n=5
+  R3: m=10, n=3
+
+Example 6
+  R1: m=3, n=4
+  R2: m=8, n=5
+  R3: m=10, n=3
+
+Example 7
+  R1: m=3, n=4
+  R2: m=4, n=5
+  R3: m=12, n=3
+
+Example 8
+  R1: m=3, n=4
+  R2: m=6, n=5
+  R3: m=12, n=3
+
+Example 9
+  R1: m=3, n=4
+  R2: m=8, n=5
+  R3: m=12, n=3
+
+Example 10
+  R1: m=3, n=4
+  R2: m=10, n=5
+  R3: m=12, n=3
+
