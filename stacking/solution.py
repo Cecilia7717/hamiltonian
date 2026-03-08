@@ -48,8 +48,8 @@ from typing import Dict, List, Tuple
 # Paths (you can edit if needed)
 # ----------------------------
 STACKING_DIR = Path("/Users/cc/Desktop/hamiltonian/stacking")
-INPUT_DIR = STACKING_DIR / "stacking_examples_4"
-OUTPUT_DIR = STACKING_DIR / "stacking_solution_4"
+INPUT_DIR = STACKING_DIR / "stacking_examples_2"
+OUTPUT_DIR = STACKING_DIR / "stacking_solution_2"
 
 # ----------------------------
 # Parsing

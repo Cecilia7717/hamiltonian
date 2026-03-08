@@ -6,9 +6,9 @@ from itertools import product
 # ==================================================
 
 MAX_M = 15
-NUM_LEVELS = 4   # change to 4, 5, 6, ...
+NUM_LEVELS = 2   # change to 4, 5, 6, ...
 NUM_EXAMPLES = 10
-OUTPUT_DIR = "stacking_examples_4"
+OUTPUT_DIR = "stacking_examples_2"
 
 # ==================================================
 # Case definitions

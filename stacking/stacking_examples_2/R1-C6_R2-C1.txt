@@ -1,0 +1,9 @@
+Stacking Case
+-----------------------------
+R1 (bottom): C6 — m = 3
+R2 (top): C1 — m = 2
+
+Example 1
+  R1: m=3, n=4
+  R2: m=2, n=4
+

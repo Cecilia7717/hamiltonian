@@ -4,7 +4,7 @@ from pathlib import Path
 
 # Adjust if needed
 STACKING_DIR = Path("/Users/cc/Desktop/hamiltonian/stacking")
-SOLUTION_DIR = STACKING_DIR / "stacking_solution"
+SOLUTION_DIR = STACKING_DIR / "stacking_solution_2"
 
 
 def file_contains_zero_solution(path: Path) -> bool:
